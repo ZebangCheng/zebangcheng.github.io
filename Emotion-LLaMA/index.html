@@ -43,66 +43,77 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <!-- 引入 MathJax 的脚本（版本 3） -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
 </head>
 <body>
 
-
-  <section class="hero">
+<!-- Paper information-->
+<section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</h1>
+            <h1 class="title is-2 publication-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=-fG3MhYAAAAJ&hl=zh-CN" target="_blank">Zebang Cheng</a><sup>1*</sup>,</span>
               <span class="author-block">
-                <a href="https://francis-rings.github.io/MotionFollower/" target="_blank">Shuyuan Tu</a><sup>1</sup>,</span>
-                <span class="author-block">
-                  <a href="https://chenhsing.github.io/" target="_blank">Zhen Xing</a><sup>1</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=FGiWOIAAAAAJ&hl=zh-CN" target="_blank">Xintong Han</a><sup>3</sup>,</span>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://zhiqic.github.io/homepage/index.html" target="_blank">Zhi-Qi Cheng</a><sup>4</sup>,</span>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://www.microsoft.com/en-us/research/people/qid/" target="_blank">Qi Dai</a><sup>2</sup>,</span>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://www.microsoft.com/en-us/research/people/cluo/" target="_blank">Chong Luo</a><sup>2</sup>,</span>
-                  </span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=7t12hVkAAAAJ&hl=en" target="_blank">Zuxuan Wu</a><sup>1</sup>,</span>
-                  </span>
-                  </div>
+                <a href="https://zhiqic.github.io/homepage/index.html" target="_blank">Zhi-Qi Cheng</a><sup>2*†</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=bjNZqGAAAAAJ&hl=zh-CN" target="_blank">Jun-Yan He</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://kaiwang960112.github.io/" target="_blank">Kai Wang</a><sup>4</sup>,
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://lum1104.github.io/" target="_blank">Yuxiang Lin</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://zeroqiaoba.github.io/Homepage/" target="_blank">Zheng Lian</a><sup>5</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://pengxj.github.io/" target="_blank">Xiaojiang Peng</a><sup>1†</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=Py54GcEAAAAJ" target="_blank">Alexander Hauptmann</a><sup>2</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">&nbsp;&nbsp;<sup>1</sup>Fudan University</span>
-                    <span class="author-block">&nbsp;&nbsp;<sup>2</sup>Microsoft Research Asia</span>
-                    <span class="author-block">&nbsp;&nbsp;<sup>3</sup>Huya Inc</span>
-                    <span class="author-block">&nbsp;&nbsp;<sup>4</sup>Carnegie Mellon University</span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">&nbsp;&nbsp;<sup>1</sup>Shenzhen Technology University</span>
+              <span class="author-block">&nbsp;&nbsp;<sup>2</sup>Carnegie Mellon University</span>
+              <span class="author-block">&nbsp;&nbsp;<sup>3</sup>Alibaba Group</span>
+              <span class="author-block">&nbsp;&nbsp;<sup>4</sup>National University of Singapore</span>
+              <span class="author-block">&nbsp;&nbsp;<sup>5</sup>Chinese Academy of Sciences</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2411.17697.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://nips.cc/virtual/2024/poster/93492" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/ZebangCheng/Emotion-LLaMA" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/ZebangCheng/Emotion-LLaMA" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
                   </a>
                 </span>
 
@@ -114,270 +125,23 @@
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
-              </span>
+                  </a>
+                </span>
+
+                <!-- Demo Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/ZebangCheng/Emotion-LLaMA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+              </div>
             </div>
-          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-59.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-43.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-47.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-61.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-45.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        Please hover your mouse over the video to watch the full content.
-      </h2>
-      <h2 style="color: red; font-weight: bold; text-align: justify;">
-        All animations are directly synthesized by StableAnimator without the use of any face-related post-processing tools, such as the face-swapping tool FaceFusion or face restoration models like GFP-GAN and CodeFormer.
-      </h2>
-      <h1 style="font-weight: bold; text-align: justify;">
-        We present StableAnimator, the first end-to-end ID-preserving video diffusion framework, which synthesizes high-quality videos without any post-processing, conditioned on a reference image and a sequence of poses.
-      </h1>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Human Image Animation Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-17.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-5.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-46.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-48.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-28.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-53.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-54.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-44.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-36-1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-27.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/case-20.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-55.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-56.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">\
-            <source src="static/videos/case-49.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        Please hover your mouse over the video to watch the full content.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Comparisons with SOTA methods</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-24.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-18.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/case-29.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/case-38.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/case-58.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-35.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-42.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/case-50.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        Please hover your mouse over the video to watch the full content.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Ablation Study</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-40.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/case-36-2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <h2 class="subtitle has-text-centered">
-        Please hover your mouse over the video to watch the full content.
-      </h2>
     </div>
   </div>
 </section>
@@ -396,6 +160,7 @@
       </div>
     </div>
   </div>
+  <div class="container content"></div>
 </section>
 <!-- End paper abstract -->
 
@@ -410,7 +175,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/7fwFyFDzQgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=M2PRXl6mXL8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -419,28 +184,76 @@
 </section>
 <!-- End youtube video -->
 
-
+<!-- Framework -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-       <h2 class="title is-3" style="text-align: center;">Framework</h2>
-       <img src="static/images/framework.jpg" alt="MY ALT TEXT"/>
-        <h2>
-          Architecture of Emotion-LLaMA, which integrates audio, visual, and text inputs for multimodal emotional recognition and reasoning.
-        </h2>
-   </div>
-    <h2 class="subtitle has-text-centered">
-        If you have any suggestions or find our work helpful, feel free to contact me.
-        <a href="mailto:zebang.cheng@gmail.com">Email: zebang.cheng@gmail.com</a>
-    </h2>
-</div>
-</div>
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Framework</h2>
+            <img src="static/image/framework.jpg" alt="MY ALT TEXT" />
+      <h2>
+        Architecture of Emotion-LLaMA, which integrates audio, visual, and text inputs for multimodal emotional recognition and reasoning.
+      </h2> 
+    </div>
+  </div>
+  <div class="container content">
+    <p>
+      <strong>Multiview Multimodal Encoder.</strong> 
+      To capture emotional cues in audio and visual modalities, we leverage the 
+      HuBERT model as our audio encoder 
+      <span>\(\mathcal{E}^{aud}\)</span>
+      and a multiview visual encoder 
+      <span>\(\mathcal{E}^{vis}\)</span>. 
+      HuBERT extracts a comprehensive auditory representation 
+      <span>\(u^{aud}\)</span>
+      from the input audio signal, exhibiting remarkable performance in 
+      emotion recognition tasks.
+    </p>
+    
+    <p>
+      We use a vision preprocessor to unify vision modalities, including facial sequences 
+      and peak frame extracted from the input video. Three visual encoders 
+      <span>\(\mathcal{E}^{vis} = \{\mathcal{E}^{vis}_{glo}, \mathcal{E}^{vis}_{loc}, \mathcal{E}^{vis}_{temp}\}\)</span> 
+      are employed to comprehensively extract complementary multi-view visual emotional features:
+    </p>
+    
+    <ul>
+      <li>
+        <em>Local Encoder</em>: 
+        A ViT-structured model pre-trained by the MAE scheme extracts static facial expression features. A facial sequence is fed 
+        into the local encoder, and the output frame-wise features are fused by 
+        average pooling, producing the local visual feature 
+        <span>\(u^{vis}_{loc} = \mathrm{AVG}(\mathcal{E}^{vis}_{loc}(V))\)</span>.
+      </li>
+      <li>
+        <em>Temporal Encoder</em>: 
+        A VideoMAE model, produces the temporal feature 
+        <span>\(u^{vis}_{temp} = \mathcal{E}^{vis}_{temp}(V)\)</span>
+        of a facial sequence, learning facial dynamics that indicate emotional states 
+        and offering a temporal dynamic view of human emotion.
+      </li>
+      <li>
+        <em>Global Encoder</em>: 
+        A ViT-structured model, EVA, initialized with official 
+        pre-trained weights, produces the visual feature 
+        <span>\(u^{vis}_{glo} = \mathcal{E}^{vis}_{glo}(\mathit{Frame}_{\mathit{peak}})\)</span>, 
+        capturing not only facial expressions but also background context.
+      </li>
+    </ul>
+  </div>
+  <div class="container content"></div>
 </section>
-  
-  
+<!-- End Framework -->
 
 
-  <footer class="footer">
+<footer class="footer">
+  <div class="content has-text-centered">
+    <h2 class="subtitle is-5">
+      If you have any suggestions or find our work helpful, feel free to contact me. 
+      <a href="mailto:zebang.cheng@gmail.com" class="has-text-weight-bold has-text-link">
+        Email: zebang.cheng@gmail.com
+      </a>
+    </h2>
+  </div>
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
