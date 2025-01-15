@@ -48,234 +48,479 @@
   <script id="MathJax-script" async 
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
   </script>
+
+<style>
+  /* 让按钮固定大小，方便点击 */
+  .nav-button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 让图片限制最大高度并保持比例 */
+  .carousel-image {
+    max-height: 400px;
+    object-fit: contain;
+  }
+</style>
 </head>
 <body>
 
-<!-- Paper information-->
-<section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block"><a href="https://scholar.google.com/citations?user=-fG3MhYAAAAJ&hl=zh-CN" target="_blank">Zebang Cheng</a><sup>1*</sup>,</span>
-              <span class="author-block">
-                <a href="https://zhiqic.github.io/homepage/index.html" target="_blank">Zhi-Qi Cheng</a><sup>2*†</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?user=bjNZqGAAAAAJ&hl=zh-CN" target="_blank">Jun-Yan He</a><sup>3</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://kaiwang960112.github.io/" target="_blank">Kai Wang</a><sup>4</sup>,
-              </span>
-            </div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://lum1104.github.io/" target="_blank">Yuxiang Lin</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://zeroqiaoba.github.io/Homepage/" target="_blank">Zheng Lian</a><sup>5</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://pengxj.github.io/" target="_blank">Xiaojiang Peng</a><sup>1†</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=Py54GcEAAAAJ" target="_blank">Alexander Hauptmann</a><sup>2</sup>
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">&nbsp;&nbsp;<sup>1</sup>Shenzhen Technology University</span>
-              <span class="author-block">&nbsp;&nbsp;<sup>2</sup>Carnegie Mellon University</span>
-              <span class="author-block">&nbsp;&nbsp;<sup>3</sup>Alibaba Group</span>
-              <span class="author-block">&nbsp;&nbsp;<sup>4</sup>National University of Singapore</span>
-              <span class="author-block">&nbsp;&nbsp;<sup>5</sup>Chinese Academy of Sciences</span>
-            </div>
-
+  <!-- Paper information-->
+  <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
             <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://nips.cc/virtual/2024/poster/93492" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                  </a>
+              <h1 class="title is-2 publication-title">Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block"><a href="https://scholar.google.com/citations?user=-fG3MhYAAAAJ&hl=zh-CN" target="_blank">Zebang Cheng</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://zhiqic.github.io/homepage/index.html" target="_blank">Zhi-Qi Cheng</a><sup>2*†</sup>,
                 </span>
-
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/ZebangCheng/Emotion-LLaMA" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?user=bjNZqGAAAAAJ&hl=zh-CN" target="_blank">Jun-Yan He</a><sup>3</sup>,
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2406.11161" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                  </a>
-                </span>
-
-                <!-- Demo Link -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/spaces/ZebangCheng/Emotion-LLaMA" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span>Demo</span>
-                  </a>
+                <span class="author-block">
+                  <a href="https://kaiwang960112.github.io/" target="_blank">Kai Wang</a><sup>4</sup>,
                 </span>
               </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://lum1104.github.io/" target="_blank">Yuxiang Lin</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://zeroqiaoba.github.io/Homepage/" target="_blank">Zheng Lian</a><sup>5</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://pengxj.github.io/" target="_blank">Xiaojiang Peng</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=Py54GcEAAAAJ" target="_blank">Alexander Hauptmann</a><sup>2</sup>
+                </span>
+              </div>
 
-<!-- Paper abstract -->
-<section class="hero is-small">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Accurate emotion perception is crucial for various applications, including human-computer interaction, education, and counseling. However, traditional single-modality approaches often fail to capture the complexity of real-world emotional expressions, which are inherently multimodal. Moreover, existing Multimodal Large Language Models (MLLMs) face challenges in integrating audio and recognizing subtle facial micro-expressions. To address this, we introduce the MERR dataset, containing 28,618 coarse-grained and 4,487 fine-grained annotated samples across diverse emotional categories. This dataset enables models to learn from varied scenarios and generalize to real-world applications. Furthermore, we propose Emotion-LLaMA, a model that seamlessly integrates audio, visual, and textual inputs through emotion-specific encoders. By aligning features into a shared space and employing a modified LLaMA model with instruction tuning, Emotion-LLaMA significantly enhances both emotional recognition and reasoning capabilities. Extensive evaluations show Emotion-LLaMA outperforms other MLLMs, achieving top scores in Clue Overlap (7.83) and Label Overlap (6.25) on EMER, an F1 score of 0.9036 on MER2023-SEMI challenge, and the highest UAR (45.59) and WAR (59.37) in zero-shot evaluations on DFEW dataset.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container content"></div>
-</section>
-<!-- End paper abstract -->
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">&nbsp;&nbsp;<sup>1</sup>Shenzhen Technology University</span>
+                <span class="author-block">&nbsp;&nbsp;<sup>2</sup>Carnegie Mellon University</span>
+                <span class="author-block">&nbsp;&nbsp;<sup>3</sup>Alibaba Group</span>
+                <span class="author-block">&nbsp;&nbsp;<sup>4</sup>National University of Singapore</span>
+                <span class="author-block">&nbsp;&nbsp;<sup>5</sup>Chinese Academy of Sciences</span>
+              </div>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3" style="text-align: center;">Demo Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/watch?v=M2PRXl6mXL8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://nips.cc/virtual/2024/poster/93492" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ZebangCheng/Emotion-LLaMA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2406.11161" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                    </a>
+                  </span>
+
+                  <!-- Demo Link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/spaces/ZebangCheng/Emotion-LLaMA" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="far fa-images"></i>
+                      </span>
+                      <span>Demo</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
-<!-- Framework -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h2 class="title is-3">Framework</h2>
-            <img src="static/image/framework.jpg" alt="MY ALT TEXT" />
-      <h2>
-        Architecture of Emotion-LLaMA, which integrates audio, visual, and text inputs for multimodal emotional recognition and reasoning.
-      </h2> 
-    </div>
-  </div>
-  <div class="container content">
-    <p>
-      <strong>Multiview Multimodal Encoder.</strong> 
-      To capture emotional cues in audio and visual modalities, we leverage the 
-      HuBERT model as our audio encoder 
-      <span>\(\mathcal{E}^{aud}\)</span>
-      and a multiview visual encoder 
-      <span>\(\mathcal{E}^{vis}\)</span>. 
-      HuBERT extracts a comprehensive auditory representation 
-      <span>\(u^{aud}\)</span>
-      from the input audio signal, exhibiting remarkable performance in 
-      emotion recognition tasks.
-    </p>
-    
-    <p>
-      We use a vision preprocessor to unify vision modalities, including facial sequences 
-      and peak frame extracted from the input video. Three visual encoders 
-      <span>\(\mathcal{E}^{vis} = \{\mathcal{E}^{vis}_{glo}, \mathcal{E}^{vis}_{loc}, \mathcal{E}^{vis}_{temp}\}\)</span> 
-      are employed to comprehensively extract complementary multi-view visual emotional features:
-    </p>
-    
-    <ul>
-      <li>
-        <em>Local Encoder</em>: 
-        A ViT-structured model pre-trained by the MAE scheme extracts static facial expression features. A facial sequence is fed 
-        into the local encoder, and the output frame-wise features are fused by 
-        average pooling, producing the local visual feature 
-        <span>\(u^{vis}_{loc} = \mathrm{AVG}(\mathcal{E}^{vis}_{loc}(V))\)</span>.
-      </li>
-      <li>
-        <em>Temporal Encoder</em>: 
-        A VideoMAE model, produces the temporal feature 
-        <span>\(u^{vis}_{temp} = \mathcal{E}^{vis}_{temp}(V)\)</span>
-        of a facial sequence, learning facial dynamics that indicate emotional states 
-        and offering a temporal dynamic view of human emotion.
-      </li>
-      <li>
-        <em>Global Encoder</em>: 
-        A ViT-structured model, EVA, initialized with official 
-        pre-trained weights, produces the visual feature 
-        <span>\(u^{vis}_{glo} = \mathcal{E}^{vis}_{glo}(\mathit{Frame}_{\mathit{peak}})\)</span>, 
-        capturing not only facial expressions but also background context.
-      </li>
-    </ul>
-  </div>
-  <div class="container content"></div>
-</section>
-<!-- End Framework -->
-
-
-<footer class="footer">
-  <div class="content has-text-centered">
-    <h2 class="subtitle is-5">
-      If you have any suggestions or find our work helpful, feel free to contact me. 
-      <a href="mailto:zebang.cheng@gmail.com" class="has-text-weight-bold has-text-link">
-        Email: zebang.cheng@gmail.com
-      </a>
-    </h2>
-  </div>
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+  <!-- Paper abstract -->
+  <section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Accurate emotion perception is crucial for various applications, including human-computer interaction, education, and counseling. However, traditional single-modality approaches often fail to capture the complexity of real-world emotional expressions, which are inherently multimodal. Moreover, existing Multimodal Large Language Models (MLLMs) face challenges in integrating audio and recognizing subtle facial micro-expressions. To address this, we introduce the MERR dataset, containing 28,618 coarse-grained and 4,487 fine-grained annotated samples across diverse emotional categories. This dataset enables models to learn from varied scenarios and generalize to real-world applications. Furthermore, we propose Emotion-LLaMA, a model that seamlessly integrates audio, visual, and textual inputs through emotion-specific encoders. By aligning features into a shared space and employing a modified LLaMA model with instruction tuning, Emotion-LLaMA significantly enhances both emotional recognition and reasoning capabilities. Extensive evaluations show Emotion-LLaMA outperforms other MLLMs, achieving top scores in Clue Overlap (7.83) and Label Overlap (6.25) on EMER, an F1 score of 0.9036 on MER2023-SEMI challenge, and the highest UAR (45.59) and WAR (59.37) in zero-shot evaluations on DFEW dataset.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+    <br>
+  </section>
+  <!-- End paper abstract -->
 
-<!-- Statcounter tracking code -->
+  <!-- Youtube video -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3" style="text-align: center;">Demo Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <!-- Youtube embed code here -->
+              <iframe src="https://www.youtube.com/embed/M2PRXl6mXL8?si=I_uQJh4aif9A_jn2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+
+  <!-- Dataset -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">MERR Dataset</h2>             
+        
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <figure class="image">
+              <img src="static/image/dataset_01.jpg" alt="MY ALT TEXT" /> 
+
+              <img src="static/image/dataset_comprision.bmp" alt="MY ALT TEXT" />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns is-centered is-vcentered is-mobile">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+                Comparison of emotional datasets. The table presents a comparative analysis of several key emotional datasets, including DFEW, MER2023, EMER, and MERR. It highlights the unique features and contributions of each dataset, such as the range of emotion categories, availability of multimodal annotations, and dataset size. This comparison underscores the significance of the MERR dataset in advancing multimodal emotion recognition and reasoning research.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container content">
+    </div>
+  </section>
+  <!-- End Dataset -->
+
+  <!-- Framework -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Framework</h2>
+              <img src="static/image/framework.jpg" alt="MY ALT TEXT" />
+        <h2>
+          Architecture of Emotion-LLaMA, which integrates audio, visual, and text inputs for multimodal emotional recognition and reasoning.
+        </h2> 
+          
+      </div>
+    </div>
+
+    <div class="columns is-vcentered is-mobile is-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <div class="container content">
+              <p>
+                <strong>Multiview Multimodal Encoder.</strong> 
+                To capture emotional cues in audio and visual modalities, we leverage the 
+                HuBERT model as our audio encoder 
+                <span>\(\mathcal{E}^{aud}\)</span>
+                and a multiview visual encoder 
+                <span>\(\mathcal{E}^{vis}\)</span>. 
+                HuBERT extracts a comprehensive auditory representation 
+                <span>\(u^{aud}\)</span>
+                from the input audio signal, exhibiting remarkable performance in 
+                emotion recognition tasks.
+              </p>
+              
+              <p>
+                We use a vision preprocessor to unify vision modalities, including facial sequences 
+                and peak frame extracted from the input video. Three visual encoders 
+                <span>\(\mathcal{E}^{vis} = \{\mathcal{E}^{vis}_{glo}, \mathcal{E}^{vis}_{loc}, \mathcal{E}^{vis}_{temp}\}\)</span> 
+                are employed to comprehensively extract complementary multi-view visual emotional features:
+              </p>
+              
+              <ul>
+                <li>
+                  <em>Local Encoder</em>: 
+                  A ViT-structured model pre-trained by the MAE scheme extracts static facial expression features. A facial sequence is fed 
+                  into the local encoder, and the output frame-wise features are fused by 
+                  average pooling, producing the local visual feature 
+                  <span>\(u^{vis}_{loc} = \mathrm{AVG}(\mathcal{E}^{vis}_{loc}(V))\)</span>.
+                </li>
+                <li>
+                  <em>Temporal Encoder</em>: 
+                  A VideoMAE model, produces the temporal feature 
+                  <span>\(u^{vis}_{temp} = \mathcal{E}^{vis}_{temp}(V)\)</span>
+                  of a facial sequence, learning facial dynamics that indicate emotional states 
+                  and offering a temporal dynamic view of human emotion.
+                </li>
+                <li>
+                  <em>Global Encoder</em>: 
+                  A ViT-structured model, EVA, initialized with official 
+                  pre-trained weights, produces the visual feature 
+                  <span>\(u^{vis}_{glo} = \mathcal{E}^{vis}_{glo}(\mathit{Frame}_{\mathit{peak}})\)</span>, 
+                  capturing not only facial expressions but also background context.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container content">
+    </div>
+  </section>
+  <!-- End Framework -->
   
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Multimodal Emotion Recognition and Reasoning</h1>
+      <div class="columns is-vcentered is-mobile is-centered">
+        <div class="column is-narrow">
+          <button 
+            class="button is-primary nav-button" 
+            id="prevBtn-1"
+          >
+            &larr;
+          </button>
+        </div>
+        <div class="column has-text-centered">
+          <figure class="image">
+            <img
+              id="carousel-image-1"
+              class="carousel-image"
+              alt="carousel image group 1"
+            />
+          </figure>
+        </div>
+        <div class="column is-narrow">
+          <button 
+            class="button is-primary nav-button" 
+            id="nextBtn-1"
+          >
+            &rarr;
+          </button>
+        </div>
+      </div>
 
-    <!-- End of Statcounter Code -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Detailed examples of multimodal emotion recognition and reasoning performed by the Emotion-LLaMA model.
+              The figure showcases the model's core capabilities in accurately identifying emotions from multimodal data
+              and generating human-like explanations for its predictions. These examples demonstrate the model's
+              proficiency in capturing subtle emotional cues, integrating information across modalities, and providing
+              meaningful insights into its decision-making process.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  </body>
-  </html>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- <h1 class="title has-text-centered">General Capability</h1> -->
+      <div class="columns is-vcentered is-mobile is-centered">
+        <div class="column is-narrow">
+          <button 
+            class="button is-info nav-button" 
+            id="prevBtn-2"
+          >
+            &larr;
+          </button>
+        </div>
+        <div class="column has-text-centered">
+          <figure class="image">
+            <img
+              id="carousel-image-2"
+              class="carousel-image"
+              alt="carousel image group 2"
+            />
+          </figure>
+        </div>
+        <div class="column is-narrow">
+          <button 
+            class="button is-info nav-button" 
+            id="nextBtn-2"
+          >
+            &rarr;
+          </button>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Detailed examples of general tasks performed by the Emotion-LLaMA model. The figure illustrates the model's versatility and robustness in handling tasks beyond emotion recognition, such as face detection and question answering. These examples highlight the model's ability to process and understand visual and textual information, enabling its application in a wide range of scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Comparisons -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Comparisons with SOTA MLLMs</h2>             
+        
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <figure class="image">
+              <img src="static/image/other_mllms.jpg" alt="MY ALT TEXT" /> 
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="columns is-centered is-vcentered is-mobile">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+                To illustrate the qualitative performance of Emotion-LLaMA, we present a detailed comparison of emotion reasoning results across different models. 
+                The table displays the emotion reasoning results of the four highest-scoring models. 
+                The video shows a person smiling while questioning another individual, an expression of dissatisfaction that suggests an angry emotional state. 
+                Accurate emotion reasoning for this sample necessitates integrating information from multiple modalities. 
+                PandaGPT and Valley captured the correct visual features but failed to incorporate information from other modalities, incorrectly classifying the emotion as happy. 
+                In contrast, VideoChat-Embed eventually reached the correct inference, but its reasoning was compromised by hallucinations. 
+                Emotion-LLaMA went a step further by recognizing the tone of the person and combining subtle facial expressions with multimodal information for accurate emotion reasoning. 
+                This example demonstrates the superiority of our model in understanding and integrating emotional cues from various modalities, resulting in more precise and contextually relevant emotion recognition.              
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container content">
+    </div>
+  </section>
+  <!-- End Comparisons -->
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <h2 class="subtitle is-5">
+        If you have any suggestions or find our work helpful, feel free to contact me. 
+        <a href="mailto:zebang.cheng@gmail.com" class="has-text-weight-bold has-text-link">
+          Email: zebang.cheng@gmail.com
+        </a>
+      </h2>
+    </div>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>  
+
+  <script>
+    /**
+     * Init Carousel
+     * @param {string} imgId   
+     * @param {string} prevBtnId 
+     * @param {string} nextBtnId 
+     * @param {Array}  images  
+     */
+    function initCarousel(imgId, prevBtnId, nextBtnId, images) {
+      let currentIndex = 0;
+      const carouselImg = document.getElementById(imgId);
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+
+      function updateImage() {
+        carouselImg.src = images[currentIndex];
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex + images.length - 1) % images.length;
+        updateImage();
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      }
+
+      prevBtn.addEventListener('click', prevImage);
+      nextBtn.addEventListener('click', nextImage);
+
+      updateImage();
+    }
+
+    const imagesGroup1 = [
+      "static/image/demo_task_01.jpg",
+      "static/image/demo_task_02.jpg",
+      "static/image/demo_task_03.jpg",
+      "static/image/demo_task_04.jpg",
+      "static/image/demo_task_05.jpg",
+    ];
+    const imagesGroup2 = [
+      "static/image/demo_other_01.jpg",
+      "static/image/demo_other_02.jpg",
+      "static/image/demo_other_03.jpg",
+      "static/image/demo_other_04.jpg",
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initCarousel("carousel-image-1", "prevBtn-1", "nextBtn-1", imagesGroup1);
+      initCarousel("carousel-image-2", "prevBtn-2", "nextBtn-2", imagesGroup2);
+    });
+  </script>
+
+</body>
+</html>
