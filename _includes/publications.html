@@ -5,7 +5,12 @@
     <h2 id="publications-title">Selected Publications</h2>
     <a class="section-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
   </div>
-  <p class="section-lead">My name is shown in <strong>bold</strong>. An asterisk (*) denotes equal contribution.</p>
+  <p class="section-lead publication-intro">
+    <span>My name is shown in <strong>bold</strong>. An asterisk (*) denotes equal contribution.</span>
+    <a class="scholar-badge-link" href="{{ site.data.profile.links.google_scholar }}" target="_blank" rel="noopener noreferrer" aria-label="View Google Scholar citation count">
+      <img class="scholar-badge" src="https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fuser%3D{{ site.data.profile.google_scholar_id }}%26hl%3Den&amp;search=%3Ctd+class%3D%22gsc_rsb_std%22%3E%28%5B%5E%3C%5D%2B%29%3C%2Ftd%3E&amp;replace=%241&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=google%20citations&amp;cacheSeconds=3600" alt="Live Google Scholar citation count" loading="lazy">
+    </a>
+  </p>
   {% include publication-list.html publications=selected_publications %}
 </section>
 {% endif %}

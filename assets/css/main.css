@@ -278,6 +278,29 @@ h2 {
   font-size: 14px;
 }
 
+.publication-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 10px;
+  align-items: center;
+}
+
+.scholar-badge-link {
+  display: inline-flex;
+  line-height: 1;
+}
+
+.scholar-badge-link:hover,
+.scholar-badge-link:focus-visible {
+  text-decoration: none;
+}
+
+.scholar-badge {
+  display: block;
+  width: auto;
+  height: 20px;
+}
+
 .news-scroll {
   max-height: 230px;
   overflow-y: auto;

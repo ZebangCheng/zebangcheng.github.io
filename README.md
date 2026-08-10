@@ -16,6 +16,8 @@ This repository powers [zebangcheng.github.io](https://zebangcheng.github.io/). 
 
 Entries are displayed in file order. Put the newest entries first and set `selected: true` for publications that should appear on the homepage. The Research page references papers by their stable publication `id`, so an ID should not be changed after it is published.
 
+The homepage citation badge reads the live Google Scholar total using `google_scholar_id` from `_data/profile.yml`. Shields.io caches the result for one hour to keep the page fast and avoid direct browser scraping.
+
 ## Publication format
 
 ```yaml

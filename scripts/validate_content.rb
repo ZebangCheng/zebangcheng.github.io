@@ -42,7 +42,7 @@ end
 
 profile = load_yaml("profile")
 raise "profile.yml must contain a mapping" unless profile.is_a?(Hash)
-require_keys(profile, %w[name title email_display], "profile.yml")
+require_keys(profile, %w[name title email_display google_scholar_id], "profile.yml")
 
 news = load_yaml("news")
 raise "news.yml must contain a list" unless news.is_a?(Array)
