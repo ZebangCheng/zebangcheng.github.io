@@ -18,7 +18,7 @@ email_display: "zebang.cheng AT gmail DOT com"
 links:
   google_scholar: "https://scholar.google.com/citations?user=-fG3MhYAAAAJ&hl=en"
   github: "https://github.com/ZebangCheng"
-  cv: ""
+  cv: "/cv/"
 advisors:
   - name: "Prof. Laizhong Cui"
     role: "Advisor"

@@ -1,0 +1,27 @@
+<ol class="publication-list">
+  {% for publication in include.publications %}
+    {% capture highlighted_name %}<strong>{{ site.data.profile.name }}</strong>{% endcapture %}
+    <li class="publication" id="{{ publication.id }}">
+      <div class="publication-heading">
+        <strong class="publication-title">{{ publication.title }}</strong>
+        <span class="venue venue-{{ publication.type | default: 'conference' }}">{{ publication.venue }} {{ publication.year }}</span>
+      </div>
+      <p class="authors">{{ publication.authors | replace: site.data.profile.name, highlighted_name }}</p>
+      {% if publication.note and publication.note != '' %}<p class="publication-note">{{ publication.note }}</p>{% endif %}
+      {% if include.show_summary and publication.summary and publication.summary != '' %}<p class="publication-summary">{{ publication.summary }}</p>{% endif %}
+      {% if publication.links %}
+        <p class="publication-links">
+          {% for link in publication.links %}
+            {% if link[1] and link[1] != '' %}
+              {% if link[1] contains '://' %}
+                <a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] | capitalize }}</a>
+              {% else %}
+                <a href="{{ link[1] | relative_url }}">{{ link[0] | capitalize }}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,39 @@
+---
+- id: "multimodal-emotional-intelligence"
+  kicker: "Models"
+  title: "Multimodal Large Language Models for Emotional Intelligence"
+  summary: "I develop multimodal large language models that jointly interpret speech, visual behavior, language, and context. The goal is to move affective computing beyond closed-set classification toward systems that can explain what a person may be feeling, identify supporting evidence, and communicate their reasoning in natural language."
+  focus:
+    - "Audio-visual instruction tuning and multimodal fusion"
+    - "Fine-grained emotion recognition and explanation"
+    - "Unified models that retain general vision-language ability"
+  publication_ids:
+    - "emotion-llama"
+    - "affectgpt"
+    - "emotion-llamav2"
+
+- id: "evaluation-and-reasoning"
+  kicker: "Data & Evaluation"
+  title: "Emotion Understanding, Reasoning, and Benchmarking"
+  summary: "Reliable emotional intelligence requires evaluation beyond a single accuracy score. My work builds datasets, benchmarks, and evaluation protocols that measure recognition, causal reasoning, temporal transitions, robustness, and free-form descriptions across realistic multimodal scenarios."
+  focus:
+    - "Unified benchmarks for emotional understanding and reasoning"
+    - "Evidence-grounded and temporal emotion analysis"
+    - "Evaluation of open-ended emotion descriptions"
+  publication_ids:
+    - "mme-emotion"
+    - "emotrans"
+    - "emer-ranker"
+
+- id: "human-aware-agents"
+  kicker: "Agents"
+  title: "Multimodal Agents and Human-Aware Intelligence"
+  summary: "I explore agents that perceive long-term multimodal context, reflect on evidence, and act in environments involving people. This direction connects multimodal reasoning with navigation, egocentric interaction, self-correction, and human-aware decision making."
+  focus:
+    - "Egocentric and long-video multimodal reasoning"
+    - "Evidence-driven reflection and self-correction"
+    - "Human-aware navigation and embodied interaction"
+  publication_ids:
+    - "ha-vln"
+    - "reflect-r1"
+    - "multimodal-stance"

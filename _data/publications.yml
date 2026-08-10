@@ -1,93 +1,281 @@
 ---
-- title: "SAGE"
-  authors: "Zebang Cheng et al."
-  venue: "EgoLink Challenge"
+- id: "emotion-llamav2"
+  short_title: "Emotion-LLaMAv2"
+  title: "Emotion-LLaMAv2 and MMEVerse: A New Framework and Benchmark for Multimodal Emotion Understanding"
+  authors: "Xiaojiang Peng, Jingyi Chen, Zebang Cheng, Bao Peng, Fengyi Wu, Yifei Dong, Shuyuan Tu, Qiyu Hu, Huiting Huang, Yuxiang Lin, Jun-Yan He, Kai Wang, Zheng Lian, Zhi-Qi Cheng"
+  venue: "arXiv"
   year: 2026
-  type: "project"
-  note: "A multimodal agent system developed for the EgoLink 2026 Challenge."
+  type: "preprint"
+  note: ""
+  summary: "A new framework and benchmark for advancing multimodal emotion understanding across perception and reasoning tasks."
   selected: false
-  links: {}
+  links:
+    paper: "https://arxiv.org/abs/2601.16449"
 
-- title: "MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models"
+- id: "mme-emotion"
+  short_title: "MME-Emotion"
+  title: "MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models"
   authors: "Fan Zhang*, Zebang Cheng*, Chong Deng*, Haoxuan Li, Zheng Lian, Qian Chen, Huadai Liu, Wen Wang, Yi-Fan Zhang, Renrui Zhang, Ziyu Guo, Zhihong Zhu, Hao Wu, Haixin Wang, Yefeng Zheng, Xiaojiang Peng, Xian Wu, Kun Wang, Xiangang Li, Jieping Ye, Pheng-Ann Heng"
   venue: "ICLR"
   year: 2026
   type: "conference"
-  note: "* Equal contribution. A unified benchmark for audio-visual emotion understanding and reasoning."
+  note: "* Equal contribution."
+  summary: "A unified benchmark for evaluating emotional understanding and causal reasoning in multimodal large language models across diverse audio-visual scenarios."
   selected: true
   links:
     paper: "https://openreview.net/pdf?id=oSX9aenbea"
     project: "https://mme-emotion.github.io/"
 
-- title: "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models"
+- id: "mer-2026"
+  short_title: "MER 2026"
+  title: "MER 2026: From Discriminative Emotion Recognition to Generative Emotion Understanding"
+  authors: "Zheng Lian, Xiaojiang Peng, Kele Xu, Ziyu Jia, Xinyi Che, Zebang Cheng, Fei Ma, Laizhong Cui, Yazhou Zhang, Xin Liu, Liang Yang, Jia Li, Fan Zhang, Liumeng Xue, Erik Cambria, Guoying Zhao, Björn W. Schuller, Jianhua Tao"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  note: ""
+  summary: "A challenge report and research perspective on the transition from discriminative emotion recognition to open-ended generative understanding."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2604.19417"
+    challenge: "https://zeroqiaoba.github.io/MER-Challenge/"
+
+- id: "emotrans"
+  short_title: "EmoTrans"
+  title: "EmoTrans: A Benchmark for Understanding, Reasoning, and Predicting Emotion Transitions in Multimodal LLMs"
+  authors: "He Hu, Tengjin Weng, Zebang Cheng, Yu Wang, Jiachen Luo, Björn W. Schuller, Zheng Lian, Laizhong Cui"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  note: ""
+  summary: "A benchmark focused on how emotions evolve over time and whether multimodal models can explain and predict those transitions."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2604.23348"
+
+- id: "omniopsd"
+  short_title: "OmniOPSD"
+  title: "OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing"
+  authors: "Zebang Cheng, Shuimu Chen, Boxue Yang, Yuanshen Guan, Jingyi Chen, Zheng Lian, Xiaojiang Peng, Fei Ma, Laizhong Cui, Qi Tian"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  note: ""
+  summary: "An on-policy self-distillation approach that uses privileged rationales to improve affective understanding and reasoning."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2606.15920"
+
+- id: "reflect-r1"
+  short_title: "Reflect-R1"
+  title: "Reflect-R1: Evidence-Driven Reflection for Self-Correction in Long Video Understanding"
+  authors: "Shuimu Chen, Yuteng Chen, Yuanshen Guan, Zebang Cheng, Zeyu Zhang, Shengqian Qin, Bin Xia, Jiaran Li, Wenming Yang, Fei Ma"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  note: ""
+  summary: "An evidence-driven reflection framework for detecting and correcting reasoning errors in long-video understanding."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2606.27922"
+
+- id: "opd-iad"
+  short_title: "OPD-IAD"
+  title: "OPD-IAD: From Language Judgment to Industrial Anomaly Detection via On-Policy Self-Distillation"
+  authors: "Shuimu Chen, Jing Jin, Nan Su, Hongbo Xu, Zebang Cheng, Wenming Yang, Fei Ma, Guijin Wang"
+  venue: "arXiv"
+  year: 2026
+  type: "preprint"
+  note: ""
+  summary: "A self-distillation framework that transfers language-model judgment capabilities to industrial anomaly detection."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2607.18850"
+
+- id: "affectgpt"
+  short_title: "AffectGPT"
+  title: "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models"
   authors: "Zheng Lian, Haoyu Chen, Lan Chen, Haiyang Sun, Licai Sun, Yong Ren, Zebang Cheng, Bin Liu, Rui Liu, Xiaojiang Peng, Jiangyan Yi, Jianhua Tao"
   venue: "ICML"
   year: 2025
   type: "conference"
   note: "Oral presentation."
+  summary: "A unified data, model, and evaluation pipeline for generative multimodal emotion understanding, supported by the MER-Caption dataset and MER-UniBench."
   selected: true
   links:
     paper: "https://proceedings.mlr.press/v267/lian25a.html"
     code: "https://github.com/zeroQiaoba/AffectGPT"
 
-- title: "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning"
+- id: "why-we-feel"
+  short_title: "Why We Feel"
+  title: "Why We Feel: Breaking Boundaries in Emotional Reasoning with Multimodal Large Language Models"
+  authors: "Yuxiang Lin, Jingdong Sun, Zhi-Qi Cheng, Jue Wang, Haomin Liang, Zebang Cheng, Yifei Dong, Jun-Yan He, Xiaojiang Peng, Xian-Sheng Hua"
+  venue: "CVPR Workshops"
+  year: 2025
+  type: "workshop"
+  note: ""
+  summary: "An exploration of emotional reasoning in multimodal large language models beyond conventional emotion classification."
+  selected: false
+  links:
+    paper: "https://openaccess.thecvf.com/content/CVPR2025W/NeXD/html/Lin_Why_We_Feel_Breaking_Boundaries_in_Emotional_Reasoning_with_Multimodal_CVPRW_2025_paper.html"
+
+- id: "ha-vln"
+  short_title: "HA-VLN"
+  title: "HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard"
+  authors: "Yifei Dong, Fengyi Wu, Qi He, Heng Li, Minghan Li, Zebang Cheng, Yuxuan Zhou, Jingdong Sun, Qi Dai, Zhi-Qi Cheng, Alexander G. Hauptmann"
+  venue: "arXiv"
+  year: 2025
+  type: "preprint"
+  note: ""
+  summary: "A benchmark for embodied agents that must navigate safely and socially around dynamic human participants."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2503.14229"
+
+- id: "dream"
+  short_title: "DREAM"
+  title: "DREAM: Decoupled Discriminative Learning with Bigraph-aware Alignment for Semi-supervised 2D-3D Cross-modal Retrieval"
+  authors: "Fan Zhang, Changhu Wang, Zebang Cheng, Xiaojiang Peng, Dongjie Wang, Yijia Xiao, Chong Chen, Xian-Sheng Hua, Xiao Luo"
+  venue: "AAAI"
+  year: 2025
+  type: "conference"
+  note: ""
+  summary: "A semi-supervised framework for aligning 2D images and 3D shapes through decoupled discriminative learning."
+  selected: false
+  links:
+    paper: "https://doi.org/10.1609/aaai.v39i12.33441"
+
+- id: "eeg-vl"
+  short_title: "EEG-VL"
+  title: "EEG-VL: Integrating Visual Features with Large Language Models for Automated Seizure Detection"
+  authors: "Zi Liang, Peng Hu, Lian Li, Zebang Cheng, Yisu Dong, Haibo He, Qiang Lu, Nan Lin"
+  venue: "BIBM"
+  year: 2025
+  type: "conference"
+  note: ""
+  summary: "A vision-language approach for representing EEG signals and supporting automated seizure detection."
+  selected: false
+  links:
+    paper: "https://doi.org/10.1109/BIBM66473.2025.11356689"
+
+- id: "mer-2025"
+  short_title: "MER 2025"
+  title: "MER 2025: When Affective Computing Meets Large Language Models"
+  authors: "Zheng Lian, Rui Liu, Kele Xu, Bin Liu, Xuefei Liu, Yazhou Zhang, Xin Liu, Yong Li, Zebang Cheng, Haolin Zuo, Ziyang Ma, Xiaojiang Peng, Xie Chen, Ya Li, Erik Cambria, Guoying Zhao, Björn W. Schuller, Jianhua Tao"
+  venue: "ACM Multimedia"
+  year: 2025
+  type: "conference"
+  note: ""
+  summary: "The MER 2025 challenge report connects established affective-computing tasks with the capabilities of large language models."
+  selected: false
+  links:
+    paper: "https://doi.org/10.1145/3746027.3762007"
+    challenge: "https://zeroqiaoba.github.io/MER2025-website/"
+
+- id: "emotion-qwen"
+  short_title: "Emotion-Qwen"
+  title: "Emotion-Qwen: Training Hybrid Experts for Unified Emotion and General Vision-Language Understanding"
+  authors: "Dawei Huang, Qing Li, Chuan Yan, Zebang Cheng, Yurong Huang, Xiang Li, Bin Li, Xiaohui Wang, Zheng Lian, Xiaojiang Peng"
+  venue: "arXiv"
+  year: 2025
+  type: "preprint"
+  note: ""
+  summary: "A hybrid-expert model designed to preserve general visual-language ability while strengthening fine-grained emotional reasoning."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2505.06685"
+
+- id: "emer-ranker"
+  short_title: "EMER-Ranker"
+  title: "EMER-Ranker: Learning to Rank Emotion Descriptions in the Absence of Ground Truth"
+  authors: "Zheng Lian, Licai Sun, Haoyu Chen, Zebang Cheng, Fan Zhang, Ziyu Jia, Ziyang Ma, Fei Ma, Xiaojiang Peng, Jianhua Tao"
+  venue: "arXiv"
+  year: 2025
+  type: "preprint"
+  note: ""
+  summary: "A ranking-based evaluation approach for free-form emotion descriptions when a single definitive ground truth is unavailable."
+  selected: false
+  links:
+    paper: "https://arxiv.org/abs/2507.04278"
+
+- id: "emotion-llama"
+  short_title: "Emotion-LLaMA"
+  title: "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning"
   authors: "Zebang Cheng*, Zhi-Qi Cheng*, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian, Xiaojiang Peng, Alexander Hauptmann"
   venue: "NeurIPS"
   year: 2024
   type: "conference"
   note: "* Equal contribution."
+  summary: "An early audio-visual large language model for recognizing emotions and producing evidence-grounded reasoning through instruction tuning."
   selected: true
   links:
     paper: "https://arxiv.org/abs/2406.11161"
     project: "/Emotion-LLaMA_homepage/"
     code: "https://github.com/ZebangCheng/Emotion-LLaMA"
 
-- title: "MIPS at SemEval-2024 Task 3: Multimodal Emotion-Cause Pair Extraction in Conversations with Multimodal Language Models"
+- id: "mips-semeval-2024"
+  short_title: "MIPS at SemEval-2024"
+  title: "MIPS at SemEval-2024 Task 3: Multimodal Emotion-Cause Pair Extraction in Conversations with Multimodal Language Models"
   authors: "Zebang Cheng*, Fuqiang Niu*, Yuxiang Lin, Zhi-Qi Cheng, Bowen Zhang, Xiaojiang Peng"
   venue: "SemEval"
   year: 2024
   type: "workshop"
   note: "* Equal contribution. 3rd place in the Multimodal Emotion-Cause Analysis Challenge."
+  summary: "A multimodal-language-model system for identifying emotions and their causal utterances in multi-party conversations."
   selected: true
   links:
     paper: "https://aclanthology.org/2024.semeval-1.97/"
     code: "https://github.com/MIPS-COLT/MER-MCE"
 
-- title: "SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition"
+- id: "sztu-cmu-mer2024"
+  short_title: "SZTU-CMU at MER2024"
+  title: "SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition"
   authors: "Zebang Cheng*, Shuyuan Tu*, Dawei Huang*, Minghan Li, Xiaojiang Peng, Zhi-Qi Cheng, Alexander G. Hauptmann"
   venue: "MRAC at ACM Multimedia"
   year: 2024
   type: "workshop"
   note: "* Equal contribution. 1st place in MER-NOISE and 3rd place in the Open-Vocabulary Multimodal Emotion Recognition Challenge."
+  summary: "A Conv-Attention extension of Emotion-LLaMA for robust multimodal emotion recognition under noise and open-vocabulary settings."
   selected: true
   links:
     paper: "https://arxiv.org/abs/2408.10500"
     code: "https://github.com/ZebangCheng/Emotion-LLaMA"
 
-- title: "Multimodal Multi-turn Conversation Stance Detection: A Challenge Dataset and Effective Model"
+- id: "multimodal-stance"
+  short_title: "Multimodal Conversation Stance Detection"
+  title: "Multimodal Multi-turn Conversation Stance Detection: A Challenge Dataset and Effective Model"
   authors: "Fuqiang Niu, Zebang Cheng, Xianghua Fu, Xiaojiang Peng, Genan Dai, Yin Chen, Hu Huang, Bowen Zhang"
   venue: "ACM Multimedia"
   year: 2024
   type: "conference"
   note: ""
+  summary: "A challenge dataset and model for recognizing stance in multimodal, multi-turn conversations."
   selected: false
-  links: {}
+  links:
+    paper: "https://doi.org/10.1145/3664647.3681416"
 
-- title: "Dataset Growth"
-  authors: "Ziheng Qin, Zhaopan Xu, Yukun Zhou, Zangwei Zheng, Zebang Cheng, Hao Tang, Lei Shang, Baigui Sun, Xiaojiang Peng, Kai Wang, Yang You"
+- id: "dataset-growth"
+  short_title: "Dataset Growth"
+  title: "Dataset Growth"
+  authors: "Ziheng Qin, Zhaopan Xu, Yukun Zhou, Zangwei Zheng, Zebang Cheng, Hao Tang, Lei Shang, Baigui Sun, Xiaojiang Peng, Radu Timofte, Hongxun Yao, Kai Wang, Yang You"
   venue: "ECCV"
   year: 2024
   type: "conference"
   note: ""
+  summary: "A study of strategies for growing training datasets and improving model performance with scalable data construction."
   selected: false
-  links: {}
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-72673-6_4"
 
-- title: "Semi-Supervised Multimodal Emotion Recognition with Expression MAE"
+- id: "expression-mae"
+  short_title: "Expression MAE"
+  title: "Semi-Supervised Multimodal Emotion Recognition with Expression MAE"
   authors: "Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, Xiaojiang Peng"
   venue: "ACM Multimedia"
   year: 2023
   type: "conference"
   note: "2nd place in the ACM Multimedia 2023 Multimodal Emotion Recognition Challenge."
+  summary: "A semi-supervised framework that uses masked autoencoding to learn expressive multimodal representations from limited annotations."
   selected: true
   links:
     paper: "https://doi.org/10.1145/3581783.3612840"

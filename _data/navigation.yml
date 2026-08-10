@@ -1,0 +1,20 @@
+---
+- key: "home"
+  label: "Home"
+  url: "/"
+
+- key: "research"
+  label: "Research"
+  url: "/research/"
+
+- key: "publications"
+  label: "Publications"
+  url: "/publications/"
+
+- key: "achievements"
+  label: "Achievements"
+  url: "/achievements/"
+
+- key: "cv"
+  label: "CV"
+  url: "/cv/"
