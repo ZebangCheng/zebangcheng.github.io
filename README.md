@@ -18,6 +18,8 @@ Entries are displayed in file order. Put the newest entries first and set `selec
 
 The homepage citation badge reads the live Google Scholar total using `google_scholar_id` from `_data/profile.yml`. Shields.io caches the result for one hour to keep the page fast and avoid direct browser scraping.
 
+The favicon assets are derived from `assets/img/profile.jpg`. When replacing the portrait, regenerate `favicon.ico`, `assets/img/favicon-32x32.png`, and `assets/img/apple-touch-icon.png` so browser tabs and saved mobile shortcuts stay consistent.
+
 ## Publication format
 
 ```yaml

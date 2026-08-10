@@ -44,6 +44,10 @@ profile = load_yaml("profile")
 raise "profile.yml must contain a mapping" unless profile.is_a?(Hash)
 require_keys(profile, %w[name title email_display google_scholar_id], "profile.yml")
 
+%w[favicon.ico assets/img/favicon-32x32.png assets/img/apple-touch-icon.png].each do |favicon|
+  raise "Missing favicon asset: #{favicon}" unless File.file?(File.join(ROOT, favicon))
+end
+
 news = load_yaml("news")
 raise "news.yml must contain a list" unless news.is_a?(Array)
 news.each_with_index do |item, index|
