@@ -1,18 +1,18 @@
 ---
 - role: "Lead Organizer (Challenge & Data)"
-  organization: "1st International Workshop on Neurophysiological Intelligence for Human-Aware Multimedia (NeuroMM), co-located with ACM Multimedia 2026"
+  organization: "NeuroMM 2026 Workshop & Challenge, co-located with ACM Multimedia 2026"
   period: "2026"
   link: "https://2026.neuromm.org/"
   note: ""
 
 - role: "Challenge Chair"
-  organization: "MER2026 Challenge & MRAC2026 Workshop, ACM Multimedia 2026"
+  organization: "MER2026 Challenge, ACM Multimedia 2026"
   period: "2026"
   link: "https://zeroqiaoba.github.io/MER-Challenge/"
   note: ""
 
 - role: "Data Chair"
-  organization: "MER2025 Challenge & MRAC2025 Workshop, ACM Multimedia 2025"
+  organization: "MER2025 Challenge, ACM Multimedia 2025"
   period: "2025"
   link: "https://zeroqiaoba.github.io/MER2025-website/"
   note: ""
