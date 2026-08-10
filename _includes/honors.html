@@ -1,0 +1,10 @@
+{% if site.data.honors and site.data.honors.size > 0 %}
+<section id="honors" aria-labelledby="honors-title">
+  <h2 id="honors-title">Honors &amp; Awards</h2>
+  <ul class="honors-list">
+    {% for honor in site.data.honors %}
+      <li><span>{{ honor.title }}</span>{% if honor.year and honor.year != '' %}<time>{{ honor.year }}</time>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

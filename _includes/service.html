@@ -1,0 +1,14 @@
+{% if site.data.service and site.data.service.size > 0 %}
+<section id="service" aria-labelledby="service-title">
+  <h2 id="service-title">Professional Activities</h2>
+  <ul class="service-list">
+    {% for item in site.data.service %}
+      <li>
+        <strong>{{ item.role }}:</strong>
+        {% if item.link and item.link != '' %}<a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.organization }}</a>{% else %}{{ item.organization }}{% endif %}
+        {% if item.period and item.period != '' %}<span>{{ item.period }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

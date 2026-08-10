@@ -1,0 +1,46 @@
+{% assign profile = site.data.profile %}
+<header class="intro" aria-labelledby="page-title">
+  <div class="intro-copy">
+    <p class="eyebrow">Multimodal Intelligence · Affective Computing</p>
+    <h1 id="page-title">{{ profile.name }}{% if profile.name_zh %} <span lang="zh-Hans">({{ profile.name_zh }})</span>{% endif %}</h1>
+    <p class="role">{{ profile.title }} · {{ profile.affiliations | join: ' & ' }}</p>
+
+    <div class="bio">
+      {% for paragraph in profile.bio %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+
+    {% if profile.advisors %}
+      <p class="advisors"><strong>Advisors:</strong>
+        {% for advisor in profile.advisors %}<a href="{{ advisor.url }}" target="_blank" rel="noopener noreferrer">{{ advisor.name }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %}.
+      </p>
+    {% endif %}
+
+    {% if profile.research_interests %}
+      <p class="interests"><strong>Research interests:</strong> {{ profile.research_interests | join: ', ' }}.</p>
+    {% endif %}
+
+    <p class="contact"><strong>Email:</strong> {{ profile.email_display }}</p>
+
+    <nav class="profile-links" aria-label="Academic profiles">
+      {% if profile.links.google_scholar %}
+        <a href="{{ profile.links.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      {% endif %}
+      {% if profile.links.github %}
+        <a href="{{ profile.links.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+      {% endif %}
+      {% if profile.links.cv %}
+        <a href="{{ profile.links.cv | relative_url }}">CV</a>
+      {% endif %}
+    </nav>
+  </div>
+
+  <figure class="portrait">
+    {% if profile.photo %}
+      <img src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}" width="256" height="256">
+    {% else %}
+      <div class="portrait-placeholder" aria-label="{{ profile.name }}">ZC</div>
+    {% endif %}
+  </figure>
+</header>

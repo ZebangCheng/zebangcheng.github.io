@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f0f4f8">
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="author" content="{{ site.data.profile.name | escape }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ site.title | escape }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.data.profile.photo }}">
+    <meta name="twitter:card" content="summary">
+    <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": {{ site.data.profile.name | jsonify }},
+        "alternateName": {{ site.data.profile.name_zh | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "image": {{ site.url | append: site.data.profile.photo | jsonify }},
+        "jobTitle": {{ site.data.profile.title | jsonify }},
+        "affiliation": [
+          {% for affiliation in site.data.profile.affiliations %}
+          {"@type": "Organization", "name": {{ affiliation | jsonify }}}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ],
+        "sameAs": [
+          {{ site.data.profile.links.google_scholar | jsonify }},
+          {{ site.data.profile.links.github | jsonify }}
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main class="site-shell" id="main-content">
+      {{ content }}
+    </main>
+  </body>
+</html>
