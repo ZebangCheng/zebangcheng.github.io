@@ -1,0 +1,28 @@
+---
+name: "Zebang Cheng"
+name_zh: "程泽浜"
+title: "Ph.D. Student in Computer Science"
+photo: "/assets/img/profile.jpg"
+affiliations:
+  - "Shenzhen University"
+  - "Guangming Laboratory"
+bio:
+  - "I am a jointly trained Ph.D. student at Shenzhen University and Guangming Laboratory (Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ))."
+  - "I have published more than 20 research papers, including work on audio-visual emotion understanding, reasoning, benchmarking, and multimodal agents."
+research_interests:
+  - "Multimodal Large Language Models"
+  - "Affective Computing"
+  - "Multimodal Emotion Understanding and Reasoning"
+  - "Multimodal Agents"
+email_display: "zebang.cheng AT gmail DOT com"
+links:
+  google_scholar: "https://scholar.google.com/citations?user=-fG3MhYAAAAJ&hl=en"
+  github: "https://github.com/ZebangCheng"
+  cv: ""
+advisors:
+  - name: "Prof. Laizhong Cui"
+    role: "Advisor"
+    url: "https://bigdata.szu.edu.cn/info/1008/1184.htm"
+  - name: "Dr. Fei Ma"
+    role: "Advisor"
+    url: "https://feima09.github.io/"

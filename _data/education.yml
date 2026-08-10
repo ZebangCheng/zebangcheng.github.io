@@ -1,0 +1,18 @@
+---
+- institution: "Shenzhen University & Guangming Laboratory"
+  degree: "Ph.D. in Computer Science and Technology"
+  period: "2025–Present"
+  location: "Shenzhen, China"
+  note: "Advised by Prof. Laizhong Cui and Dr. Fei Ma."
+
+- institution: "Shenzhen University & Shenzhen Technology University"
+  degree: "M.S. in Computer Science"
+  period: "2022–2025"
+  location: "Shenzhen, China"
+  note: "Advised by Prof. Xiaojiang Peng."
+
+- institution: "China West Normal University"
+  degree: "B.S. in Software Engineering"
+  period: "2017–2021"
+  location: "Nanchong, China"
+  note: ""

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% include profile.html %}
+{% include news.html %}
+{% include publications.html %}
+{% include education.html %}
+{% include honors.html %}
+{% include service.html %}
+
+<footer>
+  <p>© {{ site.time | date: "%Y" }} {{ site.data.profile.name }} · Last updated {{ site.time | date: "%B %Y" }}</p>
+</footer>

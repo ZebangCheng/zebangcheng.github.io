@@ -1,0 +1,93 @@
+---
+- title: "SAGE"
+  authors: "Zebang Cheng et al."
+  venue: "EgoLink Challenge"
+  year: 2026
+  type: "project"
+  note: "A multimodal agent system developed for the EgoLink 2026 Challenge."
+  selected: false
+  links: {}
+
+- title: "MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models"
+  authors: "Fan Zhang*, Zebang Cheng*, Chong Deng*, Haoxuan Li, Zheng Lian, Qian Chen, Huadai Liu, Wen Wang, Yi-Fan Zhang, Renrui Zhang, Ziyu Guo, Zhihong Zhu, Hao Wu, Haixin Wang, Yefeng Zheng, Xiaojiang Peng, Xian Wu, Kun Wang, Xiangang Li, Jieping Ye, Pheng-Ann Heng"
+  venue: "ICLR"
+  year: 2026
+  type: "conference"
+  note: "* Equal contribution. A unified benchmark for audio-visual emotion understanding and reasoning."
+  selected: true
+  links:
+    paper: "https://openreview.net/pdf?id=oSX9aenbea"
+    project: "https://mme-emotion.github.io/"
+
+- title: "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models"
+  authors: "Zheng Lian, Haoyu Chen, Lan Chen, Haiyang Sun, Licai Sun, Yong Ren, Zebang Cheng, Bin Liu, Rui Liu, Xiaojiang Peng, Jiangyan Yi, Jianhua Tao"
+  venue: "ICML"
+  year: 2025
+  type: "conference"
+  note: "Oral presentation."
+  selected: true
+  links:
+    paper: "https://proceedings.mlr.press/v267/lian25a.html"
+    code: "https://github.com/zeroQiaoba/AffectGPT"
+
+- title: "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning"
+  authors: "Zebang Cheng*, Zhi-Qi Cheng*, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian, Xiaojiang Peng, Alexander Hauptmann"
+  venue: "NeurIPS"
+  year: 2024
+  type: "conference"
+  note: "* Equal contribution."
+  selected: true
+  links:
+    paper: "https://arxiv.org/abs/2406.11161"
+    project: "/Emotion-LLaMA_homepage/"
+    code: "https://github.com/ZebangCheng/Emotion-LLaMA"
+
+- title: "MIPS at SemEval-2024 Task 3: Multimodal Emotion-Cause Pair Extraction in Conversations with Multimodal Language Models"
+  authors: "Zebang Cheng*, Fuqiang Niu*, Yuxiang Lin, Zhi-Qi Cheng, Bowen Zhang, Xiaojiang Peng"
+  venue: "SemEval"
+  year: 2024
+  type: "workshop"
+  note: "* Equal contribution. 3rd place in the Multimodal Emotion-Cause Analysis Challenge."
+  selected: true
+  links:
+    paper: "https://aclanthology.org/2024.semeval-1.97/"
+    code: "https://github.com/MIPS-COLT/MER-MCE"
+
+- title: "SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition"
+  authors: "Zebang Cheng*, Shuyuan Tu*, Dawei Huang*, Minghan Li, Xiaojiang Peng, Zhi-Qi Cheng, Alexander G. Hauptmann"
+  venue: "MRAC at ACM Multimedia"
+  year: 2024
+  type: "workshop"
+  note: "* Equal contribution. 1st place in MER-NOISE and 3rd place in the Open-Vocabulary Multimodal Emotion Recognition Challenge."
+  selected: true
+  links:
+    paper: "https://arxiv.org/abs/2408.10500"
+    code: "https://github.com/ZebangCheng/Emotion-LLaMA"
+
+- title: "Multimodal Multi-turn Conversation Stance Detection: A Challenge Dataset and Effective Model"
+  authors: "Fuqiang Niu, Zebang Cheng, Xianghua Fu, Xiaojiang Peng, Genan Dai, Yin Chen, Hu Huang, Bowen Zhang"
+  venue: "ACM Multimedia"
+  year: 2024
+  type: "conference"
+  note: ""
+  selected: false
+  links: {}
+
+- title: "Dataset Growth"
+  authors: "Ziheng Qin, Zhaopan Xu, Yukun Zhou, Zangwei Zheng, Zebang Cheng, Hao Tang, Lei Shang, Baigui Sun, Xiaojiang Peng, Kai Wang, Yang You"
+  venue: "ECCV"
+  year: 2024
+  type: "conference"
+  note: ""
+  selected: false
+  links: {}
+
+- title: "Semi-Supervised Multimodal Emotion Recognition with Expression MAE"
+  authors: "Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, Xiaojiang Peng"
+  venue: "ACM Multimedia"
+  year: 2023
+  type: "conference"
+  note: "2nd place in the ACM Multimedia 2023 Multimodal Emotion Recognition Challenge."
+  selected: true
+  links:
+    paper: "https://doi.org/10.1145/3581783.3612840"

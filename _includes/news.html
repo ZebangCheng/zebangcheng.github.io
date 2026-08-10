@@ -1,0 +1,18 @@
+{% if site.data.news and site.data.news.size > 0 %}
+<section id="news" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <div class="news-scroll" tabindex="0" aria-label="Recent news">
+    <ul class="news-list">
+      {% for item in site.data.news %}
+        <li>
+          <time datetime="{{ item.date }}">{{ item.date | date: "%b. %Y" }}</time>
+          <span>
+            {{ item.text }}
+            {% if item.link and item.link != '' %}<a class="inline-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer" aria-label="Read more about this news item">Details</a>{% endif %}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

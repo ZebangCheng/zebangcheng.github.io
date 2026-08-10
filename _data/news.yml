@@ -1,0 +1,24 @@
+---
+- date: "2026-07"
+  text: "We introduce SAGE, a multimodal agent system developed for the EgoLink 2026 Challenge."
+  link: ""
+
+- date: "2026-07"
+  text: "Our teams took 1st, 2nd, and 3rd place across three challenges at ACM Multimedia 2026: EgoLink, AffectiveArt, and MPDD-AVG."
+  link: "https://feima09.github.io/"
+
+- date: "2026-03"
+  text: "I serve as a Challenge and Data Chair for NeuroMM 2026, the 1st International Workshop on Neurophysiological Intelligence for Human-Aware Multimedia, co-located with ACM Multimedia 2026."
+  link: "https://2026.neuromm.org/"
+
+- date: "2026-01"
+  text: "MME-Emotion was accepted at ICLR 2026."
+  link: "https://mme-emotion.github.io/"
+
+- date: "2025-05"
+  text: "AffectGPT was accepted as an oral presentation at ICML 2025."
+  link: "https://proceedings.mlr.press/v267/lian25a.html"
+
+- date: "2024-09"
+  text: "Emotion-LLaMA was accepted at NeurIPS 2024."
+  link: "https://arxiv.org/abs/2406.11161"

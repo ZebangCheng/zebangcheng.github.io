@@ -1,0 +1,20 @@
+{% if site.data.education and site.data.education.size > 0 %}
+<section id="education" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <div class="timeline-list">
+    {% for item in site.data.education %}
+      <article class="timeline-item">
+        <div>
+          <h3>{{ item.institution }}</h3>
+          <p>{{ item.degree }}</p>
+          {% if item.note and item.note != '' %}<p class="timeline-note">{{ item.note }}</p>{% endif %}
+        </div>
+        <div class="timeline-meta">
+          <span>{{ item.period }}</span>
+          <span>{{ item.location }}</span>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

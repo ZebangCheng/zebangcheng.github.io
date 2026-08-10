@@ -1,0 +1,13 @@
+title: "Zebang Cheng (程泽浜)"
+description: "Zebang Cheng is a Ph.D. student working on multimodal large language models and affective computing."
+url: "https://zebangcheng.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Shanghai"
+markdown: kramdown
+
+exclude:
+  - README.md
+  - scripts
+  - test.txt
+  - vendor
