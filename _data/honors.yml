@@ -1,39 +1,91 @@
 ---
-- title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
+- id: "cast-phd-program"
+  title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
   year: ""
+  category: "talent-program"
+  featured: true
+  description: "Selected for the doctoral-student track of the young science and technology talent development program."
 
-- title: "Outstanding Graduate Student, Shenzhen University"
+- id: "outstanding-masters-graduate"
+  title: "Outstanding Master's Graduate, Shenzhen University"
   year: 2025
+  category: "graduation"
+  featured: true
+  description: "University-level recognition awarded upon completion of the master's program."
 
-- title: "Outstanding Graduate Thesis, Shenzhen University"
+- id: "outstanding-masters-thesis"
+  title: "Outstanding Master's Thesis, Shenzhen University"
   year: 2025
+  category: "graduation"
+  featured: true
+  description: "Recognition for the quality and research contribution of the master's thesis."
 
-- title: "National Scholarship"
+- id: "national-scholarship-2024"
+  title: "National Scholarship"
   year: 2024
+  category: "scholarship"
+  featured: true
+  description: "National-level graduate scholarship recognizing academic and research excellence."
 
-- title: "First Prize, Graduate Academic Scholarship"
+- id: "graduate-scholarship-2024"
+  title: "First Prize, Graduate Academic Scholarship"
   year: 2024
+  category: "scholarship"
+  featured: false
+  description: ""
 
-- title: "1st Place, MER2024 Challenge on Noise Robustness"
+- id: "mer-noise-honor-2024"
+  title: "1st Place, MER2024 Challenge on Noise Robustness"
   year: 2024
+  category: "competition"
+  featured: true
+  description: "See Competition Highlights for the associated system, paper, and code."
 
-- title: "3rd Place, Open-Vocabulary Multimodal Emotion Recognition Challenge"
+- id: "mer-open-vocabulary-honor-2024"
+  title: "3rd Place, Open-Vocabulary Multimodal Emotion Recognition Challenge"
   year: 2024
+  category: "competition"
+  featured: false
+  description: ""
 
-- title: "3rd Place, SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
+- id: "semeval-honor-2024"
+  title: "3rd Place, SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
   year: 2024
+  category: "competition"
+  featured: false
+  description: ""
 
-- title: "First Prize, Graduate Academic Scholarship"
+- id: "graduate-scholarship-2023"
+  title: "First Prize, Graduate Academic Scholarship"
   year: 2023
+  category: "scholarship"
+  featured: false
+  description: ""
 
-- title: "2nd Place, ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
+- id: "mer-honor-2023"
+  title: "2nd Place, ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
   year: 2023
+  category: "competition"
+  featured: false
+  description: ""
 
-- title: "Graduate Admission Scholarship"
+- id: "graduate-admission-scholarship"
+  title: "Graduate Admission Scholarship"
   year: 2022
+  category: "scholarship"
+  featured: false
+  description: ""
 
-- title: "1st Prize, The 13th China College Student Computer Design Competition"
+- id: "computer-design-competition-2020"
+  title: "1st Prize, The 13th China College Student Computer Design Competition"
   year: 2020
+  category: "competition"
+  featured: false
+  description: ""
 
-- title: "National Encouragement Scholarship"
+- id: "national-encouragement-scholarship"
+  title: "National Encouragement Scholarship"
   year: 2019
+  category: "scholarship"
+  featured: false
+  description: ""

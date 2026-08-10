@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_key: home
 ---
 
 {% include profile.html %}
@@ -9,6 +10,4 @@ layout: default
 {% include honors.html %}
 {% include service.html %}
 
-<footer>
-  <p>© {{ site.time | date: "%Y" }} {{ site.data.profile.name }} · Last updated {{ site.time | date: "%B %Y" }}</p>
-</footer>
+{% include footer.html %}

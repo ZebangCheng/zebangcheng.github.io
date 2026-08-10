@@ -1,0 +1,69 @@
+---
+- id: "egolink-2026"
+  title: "EgoLink Challenge, ACM Multimedia 2026"
+  rank: "1st Place"
+  year: 2026
+  role: "Lead contributor to SAGE"
+  summary: "Developed SAGE, a multimodal agent system for linking and reasoning over egocentric interaction evidence."
+  certificate: ""
+  links: {}
+
+- id: "affectiveart-2026"
+  title: "AffectiveArt Challenge, ACM Multimedia 2026"
+  rank: "2nd Place"
+  year: 2026
+  role: "Team member"
+  summary: "A multimodal affective-computing challenge focused on understanding emotional content in visual art."
+  certificate: ""
+  links: {}
+
+- id: "mpdd-avg-2026"
+  title: "MPDD-AVG Challenge, ACM Multimedia 2026"
+  rank: "3rd Place"
+  year: 2026
+  role: "Team member"
+  summary: "A challenge result in audio-visual generation and multimodal perception under the ACM Multimedia 2026 competition program."
+  certificate: ""
+  links: {}
+
+- id: "mer-noise-2024"
+  title: "MER2024 Challenge on Noise Robustness"
+  rank: "1st Place"
+  year: 2024
+  role: "Core contributor"
+  summary: "Improved Emotion-LLaMA with Conv-Attention for robust multimodal emotion recognition under noisy conditions."
+  certificate: ""
+  links:
+    paper: "https://arxiv.org/abs/2408.10500"
+    code: "https://github.com/ZebangCheng/Emotion-LLaMA"
+
+- id: "mer-open-vocabulary-2024"
+  title: "Open-Vocabulary Multimodal Emotion Recognition Challenge"
+  rank: "3rd Place"
+  year: 2024
+  role: "Core contributor"
+  summary: "Used multimodal language-model reasoning to support open-vocabulary emotion recognition beyond a fixed label set."
+  certificate: ""
+  links:
+    paper: "https://arxiv.org/abs/2408.10500"
+
+- id: "semeval-2024"
+  title: "SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
+  rank: "3rd Place"
+  year: 2024
+  role: "Co-first author and core contributor"
+  summary: "Built a multimodal system for extracting emotion-cause pairs from conversations using multimodal language models."
+  certificate: ""
+  links:
+    paper: "https://aclanthology.org/2024.semeval-1.97/"
+    code: "https://github.com/MIPS-COLT/MER-MCE"
+
+- id: "mer-2023"
+  title: "ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
+  rank: "2nd Place"
+  year: 2023
+  role: "First author and core contributor"
+  summary: "Introduced Expression MAE, a semi-supervised approach for learning robust multimodal emotion representations."
+  certificate: ""
+  links:
+    paper: "https://doi.org/10.1145/3581783.3612840"

@@ -1,0 +1,6 @@
+{% assign current_key = page.nav_key | default: "home" %}
+<nav class="site-nav" aria-label="Primary navigation">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.url | relative_url }}"{% if item.key == current_key %} aria-current="page"{% endif %}>{{ item.label }}</a>
+  {% endfor %}
+</nav>

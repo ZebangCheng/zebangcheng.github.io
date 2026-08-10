@@ -18,7 +18,7 @@
     {% endif %}
 
     {% if profile.research_interests %}
-      <p class="interests"><strong>Research interests:</strong> {{ profile.research_interests | join: ', ' }}.</p>
+      <p class="interests"><strong>Research interests:</strong> {{ profile.research_interests | join: ', ' }}. <a class="inline-link" href="{{ '/research/' | relative_url }}">Research details →</a></p>
     {% endif %}
 
     <p class="contact"><strong>Email:</strong> {{ profile.email_display }}</p>

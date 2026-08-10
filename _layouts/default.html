@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f0f4f8">
-    <meta name="description" content="{{ site.description | escape }}">
+    {% assign meta_title = page.title | default: site.title %}
+    {% assign meta_description = page.description | default: site.description %}
+    <meta name="description" content="{{ meta_description | escape }}">
     <meta name="author" content="{{ site.data.profile.name | escape }}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="{{ site.title | escape }}">
-    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:type" content="{% if page.nav_key == 'home' or page.nav_key == nil %}profile{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{{ site.url }}{{ site.data.profile.photo }}">
     <meta name="twitter:card" content="summary">
@@ -39,6 +41,7 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <main class="site-shell" id="main-content">
+      {% include navigation.html %}
       {{ content }}
     </main>
   </body>
