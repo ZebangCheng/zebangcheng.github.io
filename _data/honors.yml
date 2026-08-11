@@ -1,7 +1,14 @@
 ---
+- id: "cast-leadership-program-2026"
+  title: "Leadership Program, Party School of the China Association for Science and Technology (Science and Technology Talent Academy)"
+  year: "2026.08"
+  category: "talent-program"
+  featured: true
+  description: "Selected for CAST's national studies and leadership development program for young science and technology professionals."
+
 - id: "cast-phd-program"
   title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
-  year: ""
+  year: "2025.10"
   category: "talent-program"
   featured: true
   description: "Selected for the doctoral-student track of the young science and technology talent development program."
