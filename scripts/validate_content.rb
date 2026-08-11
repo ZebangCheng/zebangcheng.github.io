@@ -126,7 +126,8 @@ honors.each_with_index do |honor, index|
   context = "honors.yml item #{index + 1}"
   require_keys(honor, %w[id title category featured], context)
   raise "#{context} featured must be true or false" unless [true, false].include?(honor["featured"])
-  raise "#{context} year must be an integer or blank" unless honor["year"] == "" || honor["year"].is_a?(Integer)
+  valid_year = honor["year"] == "" || honor["year"].is_a?(Integer) || honor["year"].to_s.match?(/\A\d{4}\.\d{2}\z/)
+  raise "#{context} year must be an integer, YYYY.MM, or blank" unless valid_year
 end
 
 puts "Content data is valid."
