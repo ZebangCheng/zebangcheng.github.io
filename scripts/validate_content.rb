@@ -107,6 +107,16 @@ competitions.each_with_index do |competition, index|
   require_keys(competition, %w[id title rank year summary], context)
   raise "#{context} year must be an integer" unless competition["year"].is_a?(Integer)
   (competition["links"] || {}).each { |label, value| validate_link(value, "#{context} link #{label}") }
+  preview_keys = %w[certificate_preview certificate_thumbnail]
+  if preview_keys.any? { |key| competition[key] && competition[key] != "" }
+    require_keys(competition, ["certificate"] + preview_keys, context)
+    preview_keys.each do |key|
+      preview = competition[key]
+      raise "#{context} #{key} must use an absolute site path" unless preview.start_with?("/")
+      preview_path = File.join(ROOT, preview.delete_prefix("/"))
+      raise "#{context} #{key} file does not exist: #{preview}" unless File.file?(preview_path)
+    end
+  end
   certificate = competition["certificate"]
   next if certificate.nil? || certificate == ""
 
