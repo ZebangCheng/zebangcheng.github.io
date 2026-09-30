@@ -16,7 +16,7 @@ permalink: /achievements/
         <div class="achievement-certificate">
           {% if item.certificate_preview and item.certificate_preview != "" and item.certificate_thumbnail and item.certificate_thumbnail != "" %}
             <a class="certificate-thumbnail" href="{{ item.certificate_preview | relative_url }}" data-certificate-preview data-certificate-title="{{ item.title | escape }}" data-certificate-pdf="{{ item.certificate | relative_url }}" aria-label="Enlarge certificate for {{ item.title | escape }}">
-              <img src="{{ item.certificate_thumbnail | relative_url }}" alt="{{ item.rank | escape }} certificate for {{ item.title | escape }}" width="640" height="480" loading="lazy" decoding="async">
+              <img src="{{ item.certificate_thumbnail | relative_url }}" alt="{{ item.rank | escape }} certificate for {{ item.title | escape }}" width="210" loading="lazy" decoding="async">
               <span class="certificate-zoom-hint">Click to enlarge <span aria-hidden="true">↗</span></span>
             </a>
           {% elsif item.certificate and item.certificate != "" %}
@@ -70,6 +70,6 @@ permalink: /achievements/
   <div class="certificate-dialog-body"><img id="certificate-dialog-image" alt=""></div>
   <div class="certificate-dialog-footer"><a id="certificate-dialog-pdf" target="_blank" rel="noopener noreferrer">Open original PDF <span aria-hidden="true">↗</span></a></div>
 </dialog>
-<script src="{{ '/assets/js/achievements.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/achievements.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
 {% include footer.html %}
