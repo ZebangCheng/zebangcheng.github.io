@@ -6,6 +6,8 @@
   role: "Lead contributor to SAGE"
   summary: "Developed SAGE, a multimodal agent system for linking and reasoning over egocentric interaction evidence."
   certificate: "/assets/img/achievements/egolink-2026-track-2-first-place.pdf"
+  certificate_preview: "/assets/img/achievements/egolink-2026-track-2-first-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/egolink-2026-track-2-first-place-thumb.webp"
   links: {}
 
 - id: "affectiveart-2026"
@@ -15,6 +17,8 @@
   role: "Team member"
   summary: "A multimodal affective-computing challenge focused on understanding emotional content in visual art."
   certificate: "/assets/img/achievements/affectiveart-2026-track-2-second-place.pdf"
+  certificate_preview: "/assets/img/achievements/affectiveart-2026-track-2-second-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/affectiveart-2026-track-2-second-place-thumb.webp"
   links: {}
 
 - id: "mer-noise-2024"
@@ -24,6 +28,8 @@
   role: "Core contributor"
   summary: "Improved Emotion-LLaMA with Conv-Attention for robust multimodal emotion recognition under noisy conditions."
   certificate: "/assets/img/achievements/mer-2024-noise-first-place.pdf"
+  certificate_preview: "/assets/img/achievements/mer-2024-noise-first-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/mer-2024-noise-first-place-thumb.webp"
   links:
     paper: "https://arxiv.org/abs/2408.10500"
     code: "https://github.com/ZebangCheng/Emotion-LLaMA"
@@ -35,6 +41,8 @@
   role: "Core contributor"
   summary: "Used multimodal language-model reasoning to support open-vocabulary emotion recognition beyond a fixed label set."
   certificate: "/assets/img/achievements/mer-2024-open-vocabulary-third-place.pdf"
+  certificate_preview: "/assets/img/achievements/mer-2024-open-vocabulary-third-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/mer-2024-open-vocabulary-third-place-thumb.webp"
   links:
     paper: "https://arxiv.org/abs/2408.10500"
 
@@ -45,6 +53,8 @@
   role: "Co-first author and core contributor"
   summary: "Built a multimodal system for extracting emotion-cause pairs from conversations using multimodal language models."
   certificate: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place.pdf"
+  certificate_preview: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place-thumb.webp"
   links:
     paper: "https://aclanthology.org/2024.semeval-1.97/"
     code: "https://github.com/MIPS-COLT/MER-MCE"
@@ -56,5 +66,7 @@
   role: "First author and core contributor"
   summary: "Introduced Expression MAE, a semi-supervised approach for learning robust multimodal emotion representations."
   certificate: "/assets/img/achievements/mer-2023-semi-second-place.pdf"
+  certificate_preview: "/assets/img/achievements/mer-2023-semi-second-place.webp"
+  certificate_thumbnail: "/assets/img/achievements/mer-2023-semi-second-place-thumb.webp"
   links:
     paper: "https://doi.org/10.1145/3581783.3612840"

@@ -59,6 +59,8 @@ Add results to `_data/competitions.yml`. Until a real certificate is available, 
 
 Check certificate files for personal identifiers, signatures, and QR codes before publishing them.
 
+Competition entries appear as individual rows with a certificate thumbnail on the left. To enable click-to-enlarge previews, export the first PDF page as a WebP image (2200 pixels on the longest edge) and a thumbnail (within 640 × 480 pixels), then set `certificate_preview` and `certificate_thumbnail` to their absolute site paths. Use the PDF's filename stem for the preview and add `-thumb` for the thumbnail. Keep `certificate` pointing to the original PDF; its link appears beside the paper and code links. Preview images must be provided as a pair, and the content validator checks that both files exist.
+
 ## Validation and publishing
 
 Run the content check before committing:
