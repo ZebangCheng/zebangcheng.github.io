@@ -7,7 +7,9 @@ timezone: "Asia/Shanghai"
 markdown: kramdown
 
 exclude:
+  - AGENTS.md
   - README.md
+  - certificate-source
   - scripts
   - test.txt
   - vendor
