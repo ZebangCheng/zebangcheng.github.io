@@ -22,3 +22,15 @@
   period: "2025"
   link: "https://zeroqiaoba.github.io/MER2025-website/"
   note: ""
+
+- role: "Journal Reviewer"
+  organization: "TMM, TAC, PR"
+  period: ""
+  link: ""
+  note: ""
+
+- role: "Conference Reviewer"
+  organization: "NeurIPS, ACM Multimedia (ACM MM), ECCV, ICME, ICASSP"
+  period: ""
+  link: ""
+  note: ""
