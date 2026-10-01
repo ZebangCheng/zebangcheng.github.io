@@ -43,6 +43,12 @@ end
 profile = load_yaml("profile")
 raise "profile.yml must contain a mapping" unless profile.is_a?(Hash)
 require_keys(profile, %w[name title email_display google_scholar_id], "profile.yml")
+if profile["photo"]
+  raise "profile.yml photo file does not exist" unless File.file?(File.join(ROOT, profile["photo"].delete_prefix("/")))
+  %w[photo_width photo_height].each do |key|
+    raise "profile.yml #{key} must be a positive integer" unless profile[key].is_a?(Integer) && profile[key] > 0
+  end
+end
 
 %w[favicon.ico assets/img/favicon-32x32.png assets/img/apple-touch-icon.png].each do |favicon|
   raise "Missing favicon asset: #{favicon}" unless File.file?(File.join(ROOT, favicon))
@@ -52,6 +58,7 @@ news = load_yaml("news")
 raise "news.yml must contain a list" unless news.is_a?(Array)
 news.each_with_index do |item, index|
   require_keys(item, %w[date text], "news.yml item #{index + 1}")
+  validate_link(item["link"], "news.yml item #{index + 1} link")
 end
 
 publications = load_yaml("publications")
@@ -71,7 +78,20 @@ publications.each_with_index do |publication, index|
   raise "#{context} links must contain at least one link" unless links.is_a?(Hash) && links.values.any? { |value| value && value != "" }
   links.each { |label, value| validate_link(value, "#{context} link #{label}") }
 
-  next unless publication["selected"]
+  if publication["selected"] || publication["teaser"]
+    require_keys(publication, %w[teaser teaser_alt teaser_source], context)
+    teaser = publication["teaser"]
+    raise "#{context} teaser must use an absolute site path" unless teaser.start_with?("/")
+    raise "#{context} teaser file does not exist: #{teaser}" unless File.file?(File.join(ROOT, teaser.delete_prefix("/")))
+    validate_link(publication["teaser_source"], "#{context} teaser source")
+  end
+
+  (publication["metrics"] || []).each do |metric|
+    require_keys(metric, %w[label value observed_on url endpoint field], "#{context} metric")
+    raise "#{context} metric value must be a non-negative integer" unless metric["value"].is_a?(Integer) && metric["value"] >= 0
+    raise "#{context} metric date must be YYYY-MM-DD" unless metric["observed_on"].to_s.match?(/\A\d{4}-\d{2}-\d{2}\z/)
+    %w[url endpoint].each { |key| validate_link(metric[key], "#{context} metric #{key}") }
+  end
 end
 
 navigation = load_yaml("navigation")
@@ -135,6 +155,7 @@ ensure_unique_ids(honors, "honors.yml")
 honors.each_with_index do |honor, index|
   context = "honors.yml item #{index + 1}"
   require_keys(honor, %w[id title category featured], context)
+  validate_link(honor["link"], "#{context} link")
   raise "#{context} featured must be true or false" unless [true, false].include?(honor["featured"])
   valid_year = honor["year"] == "" || honor["year"].is_a?(Integer) || honor["year"].to_s.match?(/\A\d{4}\.\d{2}\z/)
   raise "#{context} year must be an integer, YYYY.MM, or blank" unless valid_year

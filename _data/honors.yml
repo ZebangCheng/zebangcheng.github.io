@@ -6,6 +6,22 @@
   featured: true
   description: "Selected for CAST's national studies and leadership development program for young science and technology professionals."
 
+- id: "egolink-honor-2026"
+  title: "1st Place (Joint), EgoLink Challenge — Track 2, ACM Multimedia 2026"
+  year: "2026.07"
+  category: "competition"
+  featured: true
+  description: "Joint first place following the final review and verification stage."
+  link: "/achievements/#egolink-2026"
+
+- id: "affectiveart-honor-2026"
+  title: "2nd Place, AffectiveArt Challenge — Track 2, ACM Multimedia 2026"
+  year: "2026.07"
+  category: "competition"
+  featured: true
+  description: "Second place in Multidimensional Art Emotion Understanding."
+  link: "/achievements/#affectiveart-2026"
+
 - id: "cast-phd-program"
   title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
   year: "2025.10"

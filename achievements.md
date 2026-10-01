@@ -12,7 +12,7 @@ permalink: /achievements/
   <h2 id="competition-title">Competition Highlights</h2>
   <div class="achievement-list">
     {% for item in site.data.competitions %}
-      <article class="achievement-row" aria-labelledby="{{ item.id }}-title">
+      <article class="achievement-row" id="{{ item.id }}" aria-labelledby="{{ item.id }}-title">
         <div class="achievement-certificate">
           {% if item.certificate_preview and item.certificate_preview != "" and item.certificate_thumbnail and item.certificate_thumbnail != "" %}
             <a class="certificate-thumbnail" href="{{ item.certificate_preview | relative_url }}" data-certificate-preview data-certificate-title="{{ item.title | escape }}" data-certificate-pdf="{{ item.certificate | relative_url }}" aria-label="Enlarge certificate for {{ item.title | escape }}">

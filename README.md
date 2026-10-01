@@ -18,7 +18,7 @@ Entries are displayed in file order. Put the newest entries first and set `selec
 
 The homepage citation badge reads the live Google Scholar total using `google_scholar_id` from `_data/profile.yml`. Shields.io caches the result for one hour to keep the page fast and avoid direct browser scraping.
 
-The favicon assets are derived from `assets/img/profile.jpg`. When replacing the portrait, regenerate `favicon.ico`, `assets/img/favicon-32x32.png`, and `assets/img/apple-touch-icon.png` so browser tabs and saved mobile shortcuts stay consistent.
+The 1280-pixel portrait is `assets/img/zebang-cheng-portrait.jpg`; its path and dimensions are set in `_data/profile.yml` for social sharing. The homepage uses CSS to frame the face while preserving the original image. Existing favicons use a close-up of the same photo. When choosing a different portrait, update the photo dimensions, adjust its CSS framing, and regenerate `favicon.ico`, `assets/img/favicon-32x32.png`, and `assets/img/apple-touch-icon.png`.
 
 ## Publication format
 
@@ -40,6 +40,12 @@ The favicon assets are derived from `assets/img/profile.jpg`. When replacing the
 ```
 
 Leave an unavailable link out instead of adding a placeholder. The template automatically emphasizes `Zebang Cheng` in author lists.
+
+Selected publications also require `teaser`, `teaser_alt`, and `teaser_source`. Store optimized WebP figures under `assets/img/publications/`; use figures from the paper or its official project, preserve their proportions, and record the source. The homepage displays figures beside the text on desktop and above it on narrow phones. Current PDF extracts are AffectGPT Figure 2, MER2024 Figure 2, and Expression MAE Figure 1; the other figures come from their project assets.
+
+Optional `metrics` provide a source link, API endpoint and count field, plus a verified `value` and `observed_on` date as an offline fallback. The browser refreshes counts and caches successful responses for six hours. Emotion-LLaMA uses GitHub stars and OpenAlex's **NeurIPS 2024 published record** (`W4415795657`); the separate arXiv record is not added, to avoid double-counting. OpenAlex counts can differ from Google Scholar. Update fallback counts and dates together when refreshing this data.
+
+`image-source/` is a local staging folder for replacement portraits, excluded from Git and the published site. Add only the chosen web-ready portrait to `assets/img/`.
 
 ## Competition and certificate format
 

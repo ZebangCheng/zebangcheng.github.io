@@ -1,14 +1,16 @@
 ---
 - id: "egolink-2026"
   title: "EgoLink Challenge, ACM Multimedia 2026"
-  rank: "1st Place"
+  rank: "1st Place (Joint)"
   year: 2026
   role: "Lead contributor to SAGE"
   summary: "Developed SAGE, a multimodal agent system for linking and reasoning over egocentric interaction evidence."
   certificate: "/assets/img/achievements/egolink-2026-track-2-first-place.pdf"
   certificate_preview: "/assets/img/achievements/egolink-2026-track-2-first-place.webp"
   certificate_thumbnail: "/assets/img/achievements/egolink-2026-track-2-first-place-thumb.webp"
-  links: {}
+  links:
+    website: "https://ego-link.github.io/challenge2026/"
+    code: "https://github.com/GML-MMGroup/SAGE"
 
 - id: "affectiveart-2026"
   title: "AffectiveArt Challenge, ACM Multimedia 2026"
@@ -19,7 +21,8 @@
   certificate: "/assets/img/achievements/affectiveart-2026-track-2-second-place.pdf"
   certificate_preview: "/assets/img/achievements/affectiveart-2026-track-2-second-place.webp"
   certificate_thumbnail: "/assets/img/achievements/affectiveart-2026-track-2-second-place-thumb.webp"
-  links: {}
+  links:
+    website: "https://affectiveart-challenge.github.io/"
 
 - id: "mer-noise-2024"
   title: "MER2024 Challenge on Noise Robustness"

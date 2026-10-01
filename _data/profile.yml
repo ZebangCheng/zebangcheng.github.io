@@ -2,14 +2,17 @@
 name: "Zebang Cheng"
 name_zh: "程泽浜"
 google_scholar_id: "-fG3MhYAAAAJ"
-title: "Ph.D. Student in Computer Science"
-photo: "/assets/img/profile.jpg"
+title: "2nd-year Ph.D. Student in Computer Science"
+photo: "/assets/img/zebang-cheng-portrait.jpg"
+photo_width: 1280
+photo_height: 1280
 affiliations:
   - "Shenzhen University"
   - "Guangming Laboratory"
 bio:
   - "I am a jointly trained Ph.D. student at Shenzhen University and Guangming Laboratory (Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ))."
-  - "I have published more than 20 research papers, including work on audio-visual emotion understanding, reasoning, benchmarking, and multimodal agents."
+  - "I study how multimodal large language models can understand and reason about human emotions and intentions, enabling more natural human–computer interaction and proactive assistance. My work includes Emotion-LLaMA (NeurIPS 2024) and MME-Emotion (ICLR 2026)."
+availability: "I am seeking research internships and welcome collaborations in multimodal LLMs, affective computing, and human-centered AI."
 research_interests:
   - "Multimodal Large Language Models"
   - "Affective Computing"

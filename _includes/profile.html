@@ -11,6 +11,8 @@
       {% endfor %}
     </div>
 
+    {% if profile.availability %}<p class="availability">{{ profile.availability }}</p>{% endif %}
+
     {% if profile.advisors %}
       <p class="advisors"><strong>Advisors:</strong>
         {% for advisor in profile.advisors %}<a href="{{ advisor.url }}" target="_blank" rel="noopener noreferrer">{{ advisor.name }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %}.

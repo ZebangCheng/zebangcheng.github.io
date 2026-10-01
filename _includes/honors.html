@@ -6,7 +6,7 @@
   </div>
   <ul class="honors-list">
     {% for honor in site.data.honors %}
-      <li><span>{{ honor.title }}</span>{% if honor.year and honor.year != '' %}<time>{{ honor.year }}</time>{% endif %}</li>
+      <li><span>{% if honor.link %}<a href="{{ honor.link | relative_url }}">{{ honor.title }}</a>{% else %}{{ honor.title }}{% endif %}</span>{% if honor.year and honor.year != '' %}<time>{{ honor.year }}</time>{% endif %}</li>
     {% endfor %}
   </ul>
 </section>
