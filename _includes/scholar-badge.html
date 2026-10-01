@@ -1,0 +1,3 @@
+<a class="scholar-badge-link" href="{{ include.link_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ include.alt | escape }}">
+  <img class="scholar-badge" src="https://img.shields.io/badge/dynamic/regex?url={{ include.source_url | url_encode }}&amp;search={{ include.pattern | url_encode }}&amp;replace=%241&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=google%20citations&amp;cacheSeconds=3600" alt="{{ include.alt | escape }}" loading="lazy">
+</a>

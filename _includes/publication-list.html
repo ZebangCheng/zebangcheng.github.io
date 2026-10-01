@@ -1,44 +1,42 @@
 <ol class="publication-list">
   {% for publication in include.publications %}
     {% capture highlighted_name %}<strong>{{ site.data.profile.name }}</strong>{% endcapture %}
-    <li class="publication{% if include.show_teasers and publication.teaser %} publication-with-teaser{% endif %}" id="{{ publication.id }}">
-      {% if include.show_teasers and publication.teaser %}
-        {% assign teaser_link = publication.links.project | default: publication.links.paper %}
-        <a class="publication-teaser" href="{% if teaser_link contains '://' %}{{ teaser_link }}{% else %}{{ teaser_link | relative_url }}{% endif %}" aria-label="View {{ publication.short_title | escape }}">
-          <img src="{{ publication.teaser | relative_url }}" alt="{{ publication.teaser_alt | escape }}" width="200" loading="lazy" decoding="async">
-        </a>
-      {% endif %}
-      <div class="publication-content">
-        <div class="publication-heading">
-          <strong class="publication-title">{{ publication.title }}</strong>
-          <span class="venue venue-{{ publication.type | default: 'conference' }}">{{ publication.venue }} {{ publication.year }}</span>
-        </div>
-        <p class="authors">{{ publication.authors | replace: site.data.profile.name, highlighted_name }}</p>
-        {% if publication.note and publication.note != '' %}<p class="publication-note">{{ publication.note }}</p>{% endif %}
-        {% if include.show_summary and publication.summary and publication.summary != '' %}<p class="publication-summary">{{ publication.summary }}</p>{% endif %}
-        {% if publication.links %}
-          <p class="publication-links">
-            {% for link in publication.links %}
-              {% if link[1] and link[1] != '' %}
-                {% if link[1] contains '://' %}
-                  <a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] | capitalize }}</a>
-                {% else %}
-                  <a href="{{ link[1] | relative_url }}">{{ link[0] | capitalize }}</a>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endif %}
-        {% if publication.metrics %}
-          <div class="publication-metrics" aria-label="{{ publication.short_title | escape }} research impact">
-            {% for metric in publication.metrics %}
-              <a class="publication-metric" href="{{ metric.url }}" target="_blank" rel="noopener noreferrer" title="{{ metric.label | escape }}: {{ metric.value }} as of {{ metric.observed_on }}{% if metric.note %} ({{ metric.note | escape }}){% endif %}" data-metric-url="{{ metric.endpoint | escape }}" data-metric-field="{{ metric.field }}" data-metric-label="{{ metric.label | escape }}" data-metric-note="{{ metric.note | escape }}">
-                <span class="metric-label">{{ metric.label }}</span><span class="metric-value">{{ metric.value }}</span>
-              </a>
-            {% endfor %}
-          </div>
-        {% endif %}
+    <li class="publication" id="{{ publication.id }}">
+      <div class="publication-heading">
+        <strong class="publication-title">{{ publication.title }}</strong>
+        <span class="venue venue-{{ publication.type | default: 'conference' }}">{{ publication.venue }} {{ publication.year }}</span>
       </div>
+      <p class="authors">{{ publication.authors | replace: site.data.profile.name, highlighted_name }}</p>
+      {% if publication.note and publication.note != '' %}<p class="publication-note">{{ publication.note }}</p>{% endif %}
+      {% if include.show_summary and publication.summary and publication.summary != '' %}<p class="publication-summary">{{ publication.summary }}</p>{% endif %}
+      {% if publication.links %}
+        <p class="publication-links">
+          {% for link in publication.links %}
+            {% if link[1] and link[1] != '' %}
+              {% if link[1] contains '://' %}
+                <a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] | capitalize }}</a>
+              {% else %}
+                <a href="{{ link[1] | relative_url }}">{{ link[0] | capitalize }}</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+      {% if publication.metrics or publication.google_scholar %}
+        <div class="publication-metrics" aria-label="{{ publication.short_title | escape }} research impact">
+          {% for metric in publication.metrics %}
+            <a class="publication-metric" href="{{ metric.url }}" target="_blank" rel="noopener noreferrer" title="{{ metric.label | escape }}: {{ metric.value }} as of {{ metric.observed_on }}{% if metric.note %} ({{ metric.note | escape }}){% endif %}" data-metric-url="{{ metric.endpoint | escape }}" data-metric-field="{{ metric.field }}" data-metric-label="{{ metric.label | escape }}" data-metric-note="{{ metric.note | escape }}">
+              <span class="metric-label">{{ metric.label }}</span><span class="metric-value">{{ metric.value }}</span>
+            </a>
+          {% endfor %}
+          {% if publication.google_scholar %}
+            {% capture scholar_pattern %}cites={{ publication.google_scholar.cites_id }}[^"]*"[^>]*>Cited by ([0-9,]+)</a>{% endcapture %}
+            {% capture scholar_link %}https://scholar.google.com/scholar?oi=bibs&hl=en&cites={{ publication.google_scholar.cites_id }}&as_sdt=5{% endcapture %}
+            {% capture scholar_alt %}Google Scholar citations for {{ publication.short_title }}{% endcapture %}
+            {% include scholar-badge.html source_url=publication.google_scholar.source_url pattern=scholar_pattern link_url=scholar_link alt=scholar_alt %}
+          {% endif %}
+        </div>
+      {% endif %}
     </li>
   {% endfor %}
 </ol>

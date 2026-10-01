@@ -78,12 +78,11 @@ publications.each_with_index do |publication, index|
   raise "#{context} links must contain at least one link" unless links.is_a?(Hash) && links.values.any? { |value| value && value != "" }
   links.each { |label, value| validate_link(value, "#{context} link #{label}") }
 
-  if publication["selected"] || publication["teaser"]
-    require_keys(publication, %w[teaser teaser_alt teaser_source], context)
-    teaser = publication["teaser"]
-    raise "#{context} teaser must use an absolute site path" unless teaser.start_with?("/")
-    raise "#{context} teaser file does not exist: #{teaser}" unless File.file?(File.join(ROOT, teaser.delete_prefix("/")))
-    validate_link(publication["teaser_source"], "#{context} teaser source")
+  if publication["google_scholar"]
+    scholar = publication["google_scholar"]
+    require_keys(scholar, %w[source_url cites_id], "#{context} Google Scholar")
+    validate_link(scholar["source_url"], "#{context} Google Scholar source")
+    raise "#{context} Google Scholar cites_id must be a numeric string" unless scholar["cites_id"].is_a?(String) && scholar["cites_id"].match?(/\A\d+\z/)
   end
 
   (publication["metrics"] || []).each do |metric|
