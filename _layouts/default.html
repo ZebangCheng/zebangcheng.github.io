@@ -17,9 +17,14 @@
     <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{{ site.url }}{{ site.data.profile.photo }}">
+    <meta property="og:image:alt" content="Portrait of {{ site.data.profile.name | escape }}">
+    {% if site.data.profile.photo_width %}<meta property="og:image:width" content="{{ site.data.profile.photo_width }}">{% endif %}
+    {% if site.data.profile.photo_height %}<meta property="og:image:height" content="{{ site.data.profile.photo_height }}">{% endif %}
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.data.profile.photo }}">
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% if page.nav_key == 'home' or page.nav_key == 'publications' %}<script src="{{ '/assets/js/publication-metrics.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>{% endif %}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

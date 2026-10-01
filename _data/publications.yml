@@ -14,6 +14,9 @@
 
 - id: "mme-emotion"
   short_title: "MME-Emotion"
+  teaser: "/assets/img/publications/mme-emotion.webp"
+  teaser_alt: "MME-Emotion task taxonomy and sample distributions across emotion recognition and reasoning tasks."
+  teaser_source: "https://mme-emotion.github.io/static/images/intro/fig_intro.png"
   title: "MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models"
   authors: "Fan Zhang*, Zebang Cheng*, Chong Deng*, Haoxuan Li, Zheng Lian, Qian Chen, Huadai Liu, Wen Wang, Yi-Fan Zhang, Renrui Zhang, Ziyu Guo, Zhihong Zhu, Hao Wu, Haixin Wang, Yefeng Zheng, Xiaojiang Peng, Xian Wu, Kun Wang, Xiangang Li, Jieping Ye, Pheng-Ann Heng"
   venue: "ICLR"
@@ -94,6 +97,9 @@
 
 - id: "affectgpt"
   short_title: "AffectGPT"
+  teaser: "/assets/img/publications/affectgpt.webp"
+  teaser_alt: "AffectGPT's MER-Caption data pipeline, combining model-led annotation with two stages of quality filtering."
+  teaser_source: "https://proceedings.mlr.press/v267/lian25a.html"
   title: "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models"
   authors: "Zheng Lian, Haoyu Chen, Lan Chen, Haiyang Sun, Licai Sun, Yong Ren, Zebang Cheng, Bin Liu, Rui Liu, Xiaojiang Peng, Jiangyan Yi, Jianhua Tao"
   venue: "ICML"
@@ -200,6 +206,23 @@
 
 - id: "emotion-llama"
   short_title: "Emotion-LLaMA"
+  teaser: "/assets/img/publications/emotion-llama.webp"
+  teaser_alt: "Emotion-LLaMA architecture aligning audio, video, and text for emotion recognition and reasoning."
+  teaser_source: "/Emotion-LLaMA_homepage/static/image/framework.jpg"
+  metrics:
+    - label: "GitHub stars"
+      value: 623
+      observed_on: "2026-10-01"
+      url: "https://github.com/ZebangCheng/Emotion-LLaMA/stargazers"
+      endpoint: "https://api.github.com/repos/ZebangCheng/Emotion-LLaMA"
+      field: "stargazers_count"
+    - label: "Citations · OpenAlex"
+      value: 93
+      observed_on: "2026-10-01"
+      note: "NeurIPS 2024 version; counts vary by index"
+      url: "https://openalex.org/W4415795657"
+      endpoint: "https://api.openalex.org/works/W4415795657?select=cited_by_count"
+      field: "cited_by_count"
   title: "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning"
   authors: "Zebang Cheng*, Zhi-Qi Cheng*, Jun-Yan He, Jingdong Sun, Kai Wang, Yuxiang Lin, Zheng Lian, Xiaojiang Peng, Alexander Hauptmann"
   venue: "NeurIPS"
@@ -215,6 +238,9 @@
 
 - id: "mips-semeval-2024"
   short_title: "MIPS at SemEval-2024"
+  teaser: "/assets/img/publications/mips-semeval-2024.webp"
+  teaser_alt: "MIPS pipeline for multimodal emotion recognition and extracting emotion–cause pairs from conversations."
+  teaser_source: "https://github.com/MIPS-COLT/MER-MCE/blob/main/images/pipeline_prompt.jpg"
   title: "MIPS at SemEval-2024 Task 3: Multimodal Emotion-Cause Pair Extraction in Conversations with Multimodal Language Models"
   authors: "Zebang Cheng*, Fuqiang Niu*, Yuxiang Lin, Zhi-Qi Cheng, Bowen Zhang, Xiaojiang Peng"
   venue: "SemEval"
@@ -229,6 +255,9 @@
 
 - id: "sztu-cmu-mer2024"
   short_title: "SZTU-CMU at MER2024"
+  teaser: "/assets/img/publications/mer2024.webp"
+  teaser_alt: "MER2024 system using Emotion-LLaMA pseudo-labels and Conv-Attention fusion of audio, visual, and text features."
+  teaser_source: "https://arxiv.org/abs/2408.10500"
   title: "SZTU-CMU at MER2024: Improving Emotion-LLaMA with Conv-Attention for Multimodal Emotion Recognition"
   authors: "Zebang Cheng*, Shuyuan Tu*, Dawei Huang*, Minghan Li, Xiaojiang Peng, Zhi-Qi Cheng, Alexander G. Hauptmann"
   venue: "MRAC at ACM Multimedia"
@@ -269,6 +298,9 @@
 
 - id: "expression-mae"
   short_title: "Expression MAE"
+  teaser: "/assets/img/publications/expression-mae.webp"
+  teaser_alt: "Expression MAE's semi-supervised pipeline combining multimodal feature extraction with pseudo-label training."
+  teaser_source: "https://lum1104.github.io/assets/pdf/acmmm_grand_challenge.pdf"
   title: "Semi-Supervised Multimodal Emotion Recognition with Expression MAE"
   authors: "Zebang Cheng, Yuxiang Lin, Zhaoru Chen, Xiang Li, Shuyi Mao, Fan Zhang, Daijun Ding, Bowen Zhang, Xiaojiang Peng"
   venue: "ACM Multimedia"

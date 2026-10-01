@@ -1,5 +1,5 @@
 title: "Zebang Cheng (程泽浜)"
-description: "Zebang Cheng is a Ph.D. student working on multimodal large language models and affective computing."
+description: "Zebang Cheng studies multimodal LLMs that understand human emotions and intentions, enabling natural interaction and proactive assistance."
 url: "https://zebangcheng.github.io"
 baseurl: ""
 lang: "en"
@@ -10,6 +10,7 @@ exclude:
   - AGENTS.md
   - README.md
   - certificate-source
+  - image-source
   - scripts
   - test.txt
   - vendor

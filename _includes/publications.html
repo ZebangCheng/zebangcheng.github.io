@@ -11,6 +11,6 @@
       <img class="scholar-badge" src="https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fuser%3D{{ site.data.profile.google_scholar_id }}%26hl%3Den&amp;search=%3Ctd+class%3D%22gsc_rsb_std%22%3E%28%5B%5E%3C%5D%2B%29%3C%2Ftd%3E&amp;replace=%241&amp;logo=Google%20Scholar&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=google%20citations&amp;cacheSeconds=3600" alt="Live Google Scholar citation count" loading="lazy">
     </a>
   </p>
-  {% include publication-list.html publications=selected_publications %}
+  {% include publication-list.html publications=selected_publications show_teasers=true %}
 </section>
 {% endif %}
