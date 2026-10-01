@@ -14,9 +14,9 @@
 
 - id: "mme-emotion"
   short_title: "MME-Emotion"
-  teaser: "/assets/img/publications/mme-emotion.webp"
-  teaser_alt: "MME-Emotion task taxonomy and sample distributions across emotion recognition and reasoning tasks."
-  teaser_source: "https://mme-emotion.github.io/static/images/intro/fig_intro.png"
+  teaser: "/assets/img/publications/mme-emotion-framework.webp"
+  teaser_alt: "MME-Emotion evaluation framework combining audio clues, reasoning-step extraction, model scoring, and human verification."
+  teaser_source: "https://mme-emotion.github.io/static/images/intro/fig_framework.png"
   title: "MME-Emotion: A Holistic Evaluation Benchmark for Emotional Intelligence in Multimodal Large Language Models"
   authors: "Fan Zhang*, Zebang Cheng*, Chong Deng*, Haoxuan Li, Zheng Lian, Qian Chen, Huadai Liu, Wen Wang, Yi-Fan Zhang, Renrui Zhang, Ziyu Guo, Zhihong Zhu, Hao Wu, Haixin Wang, Yefeng Zheng, Xiaojiang Peng, Xian Wu, Kun Wang, Xiangang Li, Jieping Ye, Pheng-Ann Heng"
   venue: "ICLR"
