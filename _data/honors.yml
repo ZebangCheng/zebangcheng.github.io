@@ -5,22 +5,8 @@
   category: "talent-program"
   featured: true
   description: "Selected for CAST's national studies and leadership development program for young science and technology professionals."
-
-- id: "egolink-honor-2026"
-  title: "1st Place (Joint), EgoLink Challenge — Track 2, ACM Multimedia 2026"
-  year: "2026.07"
-  category: "competition"
-  featured: true
-  description: "Joint first place following the final review and verification stage."
-  link: "/achievements/#egolink-2026"
-
-- id: "affectiveart-honor-2026"
-  title: "2nd Place, AffectiveArt Challenge — Track 2, ACM Multimedia 2026"
-  year: "2026.07"
-  category: "competition"
-  featured: true
-  description: "Second place in Multidimensional Art Emotion Understanding."
-  link: "/achievements/#affectiveart-2026"
+  category_label: "Talent program"
+  gallery: []
 
 - id: "cast-phd-program"
   title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
@@ -28,6 +14,8 @@
   category: "talent-program"
   featured: true
   description: "Selected for the doctoral-student track of the young science and technology talent development program."
+  category_label: "Talent program"
+  gallery: []
 
 - id: "outstanding-masters-graduate"
   title: "Outstanding Master's Graduate, Shenzhen University"
@@ -35,6 +23,9 @@
   category: "graduation"
   featured: true
   description: "University-level recognition awarded upon completion of the master's program."
+  category_label: "Graduation honor"
+  awarding_body: "Shenzhen University"
+  gallery: []
 
 - id: "outstanding-masters-thesis"
   title: "Outstanding Master's Thesis, Shenzhen University"
@@ -42,6 +33,9 @@
   category: "graduation"
   featured: true
   description: "Recognition for the quality and research contribution of the master's thesis."
+  category_label: "Graduation honor"
+  awarding_body: "Shenzhen University"
+  gallery: []
 
 - id: "national-scholarship-2024"
   title: "National Scholarship"
@@ -49,66 +43,41 @@
   category: "scholarship"
   featured: true
   description: "National-level graduate scholarship recognizing academic and research excellence."
+  category_label: "Scholarship"
+  gallery: []
 
 - id: "graduate-scholarship-2024"
   title: "First Prize, Graduate Academic Scholarship"
   year: 2024
   category: "scholarship"
   featured: false
-  description: ""
-
-- id: "mer-noise-honor-2024"
-  title: "1st Place, MER2024 Challenge on Noise Robustness"
-  year: 2024
-  category: "competition"
-  featured: true
-  description: "See Competition Highlights for the associated system, paper, and code."
-
-- id: "mer-open-vocabulary-honor-2024"
-  title: "3rd Place, Open-Vocabulary Multimodal Emotion Recognition Challenge"
-  year: 2024
-  category: "competition"
-  featured: false
-  description: ""
-
-- id: "semeval-honor-2024"
-  title: "3rd Place, SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
-  year: 2024
-  category: "competition"
-  featured: false
-  description: ""
+  description: "First-prize graduate academic scholarship, awarded in 2024."
+  category_label: "Scholarship"
+  gallery: []
 
 - id: "graduate-scholarship-2023"
   title: "First Prize, Graduate Academic Scholarship"
   year: 2023
   category: "scholarship"
   featured: false
-  description: ""
-
-- id: "mer-honor-2023"
-  title: "2nd Place, ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
-  year: 2023
-  category: "competition"
-  featured: false
-  description: ""
+  description: "First-prize graduate academic scholarship, awarded in 2023."
+  category_label: "Scholarship"
+  gallery: []
 
 - id: "graduate-admission-scholarship"
   title: "Graduate Admission Scholarship"
   year: 2022
   category: "scholarship"
   featured: false
-  description: ""
-
-- id: "computer-design-competition-2020"
-  title: "1st Prize, The 13th China College Student Computer Design Competition"
-  year: 2020
-  category: "competition"
-  featured: false
-  description: ""
+  description: "Scholarship received upon entering graduate study in 2022."
+  category_label: "Scholarship"
+  gallery: []
 
 - id: "national-encouragement-scholarship"
   title: "National Encouragement Scholarship"
   year: 2019
   category: "scholarship"
   featured: false
-  description: ""
+  description: "National Encouragement Scholarship, awarded in 2019."
+  category_label: "Scholarship"
+  gallery: []

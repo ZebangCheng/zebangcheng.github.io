@@ -1,0 +1,23 @@
+{% assign images = include.images %}
+{% if images and images.size > 0 %}
+  {% assign cover = images | first %}
+  <div class="media-gallery{% if include.photos %} media-gallery-photos{% endif %}" data-gallery data-gallery-title="{{ include.title | escape }}"{% if include.document and include.document != '' %} data-gallery-document="{{ include.document | relative_url }}"{% endif %}>
+    <a class="gallery-cover" href="{{ cover.src | relative_url }}" data-gallery-open="0" aria-label="Open gallery for {{ include.title | escape }}">
+      <img src="{{ cover.thumbnail | default: cover.src | relative_url }}" alt="{{ cover.alt | escape }}" width="210" height="158" loading="lazy" decoding="async">
+      <span class="gallery-hint"><span>{% if cover.placeholder %}Preview gallery{% else %}View {% if include.photos or images.size > 1 %}gallery{% else %}certificate{% endif %}{% endif %}</span><span aria-hidden="true">{% if images.size > 1 %}{{ images.size }} images{% else %}↗{% endif %}</span></span>
+    </a>
+    <div class="gallery-thumbs"{% if images.size == 1 %} hidden{% endif %}>
+      {% for photo in images %}
+        <a class="gallery-item" href="{{ photo.src | relative_url }}" data-gallery-open="{{ forloop.index0 }}" data-gallery-caption="{{ photo.caption | escape }}" data-gallery-alt="{{ photo.alt | escape }}" data-gallery-placeholder="{{ photo.placeholder | default: false }}" aria-label="Open image {{ forloop.index }} of {{ images.size }} for {{ include.title | escape }}">
+          <img src="{{ photo.thumbnail | default: photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="64" height="48" loading="lazy" decoding="async">
+        </a>
+      {% endfor %}
+    </div>
+    {% if cover.placeholder %}<p class="gallery-pending">Photos to be added</p>{% endif %}
+  </div>
+{% else %}
+  <figure class="gallery-empty">
+    <img src="{{ '/assets/img/achievements/placeholders/certificate.svg' | relative_url }}" alt="Certificate image to be added" width="210" height="158" loading="lazy" decoding="async">
+    <figcaption>Certificate to be added</figcaption>
+  </figure>
+{% endif %}

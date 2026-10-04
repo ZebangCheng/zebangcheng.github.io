@@ -47,9 +47,11 @@ Optional `metrics` provide a source link, API endpoint and count field, plus a v
 
 `image-source/` is a local staging folder for replacement portraits, excluded from Git and the published site. Add only the chosen web-ready portrait to `assets/img/`.
 
-## Competition and certificate format
+## Achievements and image galleries
 
-Add results to `_data/competitions.yml`. Until a real certificate is available, leave `certificate` blank and the page will show a neutral placeholder. When adding a certificate, place the optimized image or PDF under `assets/img/achievements/` and use its site path:
+Competition results belong only in `_data/competitions.yml`. Non-competition honors go in `_data/honors.yml`; `featured: true` selects the concise homepage list, while Achievements and the CV include every honor. Event records in `_data/service.yml` use `kind: event` and support photo galleries; reviewer records use `kind: review`.
+
+Store media by category and stable entry ID under `assets/img/achievements/`. Set `gallery: []` until a certificate is available. Each gallery item needs an image, alternative text, and a caption; a smaller thumbnail is optional:
 
 ```yaml
 - id: "challenge-2026"
@@ -58,14 +60,21 @@ Add results to `_data/competitions.yml`. Until a real certificate is available, 
   year: 2026
   role: "Team lead"
   summary: "Task, contribution, and result."
-  certificate: "/assets/img/achievements/challenge-2026.webp"
+  certificate: "/assets/img/achievements/competitions/challenge-2026/certificate.pdf"
+  gallery:
+    - src: "/assets/img/achievements/competitions/challenge-2026/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/challenge-2026/certificate-thumb.webp"
+      alt: "First-place certificate for Challenge name"
+      caption: "1st Place, 2026."
   links:
     website: "https://example.com/"
 ```
 
 Check certificate files for personal identifiers, signatures, and QR codes before publishing them.
 
-Competition entries appear as individual rows with a certificate thumbnail on the left. To enable click-to-enlarge previews, export the first PDF page as a WebP image (2200 pixels on the longest edge) and a thumbnail (within 640 × 480 pixels), then set `certificate_preview` and `certificate_thumbnail` to their absolute site paths. Use the PDF's filename stem for the preview and add `-thumb` for the thumbnail. Keep `certificate` pointing to the original PDF; its link appears beside the paper and code links. Preview images must be provided as a pair, and the content validator checks that both files exist.
+Rows share a 4:3 thumbnail frame on the left, with full images in a click-to-enlarge gallery. Multiple images support buttons, arrow keys, and touch swipes. Existing PDF download URLs remain unchanged. Shared placeholder images are explicitly labeled and require `placeholder: true`; remove that flag when replacing them with real photos.
+
+See [the achievement media guide](ACHIEVEMENT_MEDIA.md) for prepared folders, photo naming, image sizes, and examples for activities and scholarships.
 
 ## Validation and publishing
 
@@ -73,8 +82,9 @@ Run the content check before committing:
 
 ```bash
 ruby scripts/validate_content.rb
+ruby scripts/validate_achievements.rb
 ```
 
-Opening a pull request also runs this check automatically. After changes are merged into `main`, GitHub Pages publishes the updated site.
+Opening a pull request runs both checks and a Jekyll build automatically. After changes are merged into `main`, GitHub Pages publishes the updated site.
 
 The existing Emotion-LLaMA project page remains available under `/Emotion-LLaMA_homepage/`.

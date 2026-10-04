@@ -1,12 +1,15 @@
-{% if site.data.honors and site.data.honors.size > 0 %}
+{% assign displayed_honors = site.data.honors | where: "featured", true %}
+{% if include.show_all %}{% assign displayed_honors = site.data.honors %}{% endif %}
+{% if displayed_honors.size > 0 %}
 <section id="honors" aria-labelledby="honors-title">
   <div class="section-heading-row">
     <h2 id="honors-title">Honors &amp; Awards</h2>
     <a class="section-more" href="{{ '/achievements/' | relative_url }}">Awards &amp; certificates →</a>
   </div>
   <ul class="honors-list">
-    {% for honor in site.data.honors %}
-      <li><span>{% if honor.link %}<a href="{{ honor.link | relative_url }}">{{ honor.title }}</a>{% else %}{{ honor.title }}{% endif %}</span>{% if honor.year and honor.year != '' %}<time>{{ honor.year }}</time>{% endif %}</li>
+    {% for honor in displayed_honors %}
+      {% capture detail_link %}/achievements/#{{ honor.id }}{% endcapture %}
+      <li><span><a href="{{ detail_link | relative_url }}">{{ honor.title }}</a></span>{% if honor.year and honor.year != '' %}<time>{{ honor.year }}</time>{% endif %}</li>
     {% endfor %}
   </ul>
 </section>

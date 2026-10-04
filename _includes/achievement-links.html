@@ -1,0 +1,8 @@
+<div class="publication-links">
+  {% for link in include.links %}
+    {% if link[1] and link[1] != '' %}
+      {% if link[1] contains '://' %}<a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] | capitalize }}</a>{% else %}<a href="{{ link[1] | relative_url }}">{{ link[0] | capitalize }}</a>{% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if include.document and include.document != '' %}<a href="{{ include.document | relative_url }}" target="_blank" rel="noopener noreferrer">Certificate PDF</a>{% endif %}
+</div>
