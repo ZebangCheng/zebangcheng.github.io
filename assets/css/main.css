@@ -691,46 +691,6 @@ footer p {
   color: var(--muted);
 }
 
-.achievements-nav {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 16px 10px 38px;
-}
-
-.achievements-nav a {
-  display: grid;
-  gap: 6px;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--soft-blue);
-}
-
-.achievements-nav a:hover {
-  border-color: var(--blue);
-  text-decoration: none;
-}
-
-.achievements-nav span {
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.achievements-nav strong {
-  color: var(--navy);
-  font-size: 15px;
-  line-height: 1.35;
-}
-
-.achievements-nav small {
-  color: var(--muted);
-  font-size: 12px;
-}
-
 .achievement-section {
   margin-top: 46px;
 }
@@ -1160,17 +1120,6 @@ html.gallery-viewer-open {
   .achievement-meta {
     flex-wrap: wrap;
     gap: 4px 10px;
-  }
-
-  .achievements-nav {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin: 12px 4px 26px;
-  }
-
-  .achievements-nav a {
-    gap: 3px;
-    padding: 12px 15px;
   }
 
   .gallery-hint {
