@@ -10,12 +10,6 @@ permalink: /achievements/
 {% assign activities = site.data.service | where: "kind", "event" %}
 {% assign reviews = site.data.service | where: "kind", "review" %}
 
-<nav class="achievements-nav" aria-label="On this page">
-  <a href="#competition-title"><span>01 / Results</span><strong>Competition Highlights</strong><small>{{ site.data.competitions.size }} competitions</small></a>
-  <a href="#honors-detail-title"><span>02 / Recognition</span><strong>Honors &amp; Awards</strong><small>{{ site.data.honors.size }} honors &amp; scholarships</small></a>
-  <a href="#service-detail-title"><span>03 / Community</span><strong>Professional Activities</strong><small>Organization &amp; peer review</small></a>
-</nav>
-
 <section class="detail-section achievement-section" aria-labelledby="competition-title">
   <h2 id="competition-title">Competition Highlights</h2>
   <p class="section-lead">Challenge results, research contributions, and award certificates.</p>
