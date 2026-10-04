@@ -4,33 +4,101 @@
   period: "2026"
   link: "https://2026.neuromm.org/"
   note: ""
+  id: "neuromm-2026"
+  kind: "event"
+  description: "A workshop and challenge on neurophysiological intelligence for human-aware multimedia, co-located with ACM Multimedia 2026."
+  gallery:
+    - src: "/assets/img/achievements/placeholders/event-overview.svg"
+      alt: "Photo placeholder for NeuroMM 2026 Workshop & Challenge, ACM Multimedia 2026: event overview"
+      caption: "Event overview · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-session.svg"
+      alt: "Photo placeholder for NeuroMM 2026 Workshop & Challenge, ACM Multimedia 2026: talks and discussion"
+      caption: "Talks and discussion · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-group.svg"
+      alt: "Photo placeholder for NeuroMM 2026 Workshop & Challenge, ACM Multimedia 2026: group photo"
+      caption: "Group photo · photo to be added."
+      placeholder: true
 
 - role: "Challenge Chair"
   organization: "MER2026 Challenge, ACM Multimedia 2026"
   period: "2026"
   link: "https://zeroqiaoba.github.io/MER-Challenge/"
   note: ""
+  id: "mer-2026"
+  kind: "event"
+  description: "The MER2026 Challenge explores generative emotion understanding across interlocutor emotions, fine-grained labels, preferences, and physiological signals."
+  gallery:
+    - src: "/assets/img/achievements/placeholders/event-overview.svg"
+      alt: "Photo placeholder for MER2026 Challenge, ACM Multimedia 2026: event overview"
+      caption: "Event overview · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-session.svg"
+      alt: "Photo placeholder for MER2026 Challenge, ACM Multimedia 2026: talks and discussion"
+      caption: "Talks and discussion · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-group.svg"
+      alt: "Photo placeholder for MER2026 Challenge, ACM Multimedia 2026: group photo"
+      caption: "Group photo · photo to be added."
+      placeholder: true
 
 - role: "Lead Organizer"
   organization: "VALSE 2026 Special Corner: Beyond Papers — A Guide to Bringing People Together"
   period: "2026"
   link: "https://valser.org/2026/#/"
   note: ""
+  id: "valse-2026"
+  kind: "event"
+  description: "A VALSE 2026 Special Corner on organizing academic activities and bringing the research community together."
+  gallery:
+    - src: "/assets/img/achievements/placeholders/event-overview.svg"
+      alt: "Photo placeholder for VALSE 2026 Special Corner: Beyond Papers — A Guide to Bringing People Together: event overview"
+      caption: "Event overview · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-session.svg"
+      alt: "Photo placeholder for VALSE 2026 Special Corner: Beyond Papers — A Guide to Bringing People Together: talks and discussion"
+      caption: "Talks and discussion · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-group.svg"
+      alt: "Photo placeholder for VALSE 2026 Special Corner: Beyond Papers — A Guide to Bringing People Together: group photo"
+      caption: "Group photo · photo to be added."
+      placeholder: true
 
 - role: "Data Chair"
   organization: "MER2025 Challenge, ACM Multimedia 2025"
   period: "2025"
   link: "https://zeroqiaoba.github.io/MER2025-website/"
   note: ""
+  id: "mer-2025"
+  kind: "event"
+  description: "The MER2025 Challenge connects multimodal emotion recognition with large language models and generative emotion understanding."
+  gallery:
+    - src: "/assets/img/achievements/placeholders/event-overview.svg"
+      alt: "Photo placeholder for MER2025 Challenge, ACM Multimedia 2025: event overview"
+      caption: "Event overview · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-session.svg"
+      alt: "Photo placeholder for MER2025 Challenge, ACM Multimedia 2025: talks and discussion"
+      caption: "Talks and discussion · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-group.svg"
+      alt: "Photo placeholder for MER2025 Challenge, ACM Multimedia 2025: group photo"
+      caption: "Group photo · photo to be added."
+      placeholder: true
 
 - role: "Journal Reviewer"
   organization: "TMM, TAC, PR"
   period: ""
   link: ""
   note: ""
+  id: "journal-reviewer"
+  kind: "review"
 
 - role: "Conference Reviewer"
   organization: "NeurIPS, ACM Multimedia (ACM MM), ECCV, ICME, ICASSP"
   period: ""
   link: ""
   note: ""
+  id: "conference-reviewer"
+  kind: "review"

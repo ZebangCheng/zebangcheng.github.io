@@ -9,6 +9,7 @@ markdown: kramdown
 exclude:
   - AGENTS.md
   - README.md
+  - ACHIEVEMENT_MEDIA.md
   - certificate-source
   - image-source
   - scripts

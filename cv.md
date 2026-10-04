@@ -26,6 +26,6 @@ permalink: /cv/
   {% include publication-list.html publications=selected_publications %}
 </section>
 
-{% include honors.html %}
+{% include honors.html show_all=true %}
 {% include service.html %}
 {% include footer.html %}

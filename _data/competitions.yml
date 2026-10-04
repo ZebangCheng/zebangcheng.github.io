@@ -6,11 +6,14 @@
   role: "Lead contributor to SAGE"
   summary: "Developed SAGE, a multimodal agent system for linking and reasoning over egocentric interaction evidence."
   certificate: "/assets/img/achievements/egolink-2026-track-2-first-place.pdf"
-  certificate_preview: "/assets/img/achievements/egolink-2026-track-2-first-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/egolink-2026-track-2-first-place-thumb.webp"
   links:
     website: "https://ego-link.github.io/challenge2026/"
     code: "https://github.com/GML-MMGroup/SAGE"
+  gallery:
+    - src: "/assets/img/achievements/competitions/egolink-2026/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/egolink-2026/certificate-thumb.webp"
+      alt: "1st Place (Joint) certificate for EgoLink Challenge, ACM Multimedia 2026"
+      caption: "1st Place (Joint) · 2026"
 
 - id: "affectiveart-2026"
   title: "AffectiveArt Challenge, ACM Multimedia 2026"
@@ -19,10 +22,13 @@
   role: "Team member"
   summary: "A multimodal affective-computing challenge focused on understanding emotional content in visual art."
   certificate: "/assets/img/achievements/affectiveart-2026-track-2-second-place.pdf"
-  certificate_preview: "/assets/img/achievements/affectiveart-2026-track-2-second-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/affectiveart-2026-track-2-second-place-thumb.webp"
   links:
     website: "https://affectiveart-challenge.github.io/"
+  gallery:
+    - src: "/assets/img/achievements/competitions/affectiveart-2026/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/affectiveart-2026/certificate-thumb.webp"
+      alt: "2nd Place certificate for AffectiveArt Challenge, ACM Multimedia 2026"
+      caption: "2nd Place · 2026"
 
 - id: "mer-noise-2024"
   title: "MER2024 Challenge on Noise Robustness"
@@ -31,11 +37,14 @@
   role: "Core contributor"
   summary: "Improved Emotion-LLaMA with Conv-Attention for robust multimodal emotion recognition under noisy conditions."
   certificate: "/assets/img/achievements/mer-2024-noise-first-place.pdf"
-  certificate_preview: "/assets/img/achievements/mer-2024-noise-first-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/mer-2024-noise-first-place-thumb.webp"
   links:
     paper: "https://arxiv.org/abs/2408.10500"
     code: "https://github.com/ZebangCheng/Emotion-LLaMA"
+  gallery:
+    - src: "/assets/img/achievements/competitions/mer-noise-2024/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/mer-noise-2024/certificate-thumb.webp"
+      alt: "1st Place certificate for MER2024 Challenge on Noise Robustness"
+      caption: "1st Place · 2024"
 
 - id: "mer-open-vocabulary-2024"
   title: "Open-Vocabulary Multimodal Emotion Recognition Challenge"
@@ -44,10 +53,13 @@
   role: "Core contributor"
   summary: "Used multimodal language-model reasoning to support open-vocabulary emotion recognition beyond a fixed label set."
   certificate: "/assets/img/achievements/mer-2024-open-vocabulary-third-place.pdf"
-  certificate_preview: "/assets/img/achievements/mer-2024-open-vocabulary-third-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/mer-2024-open-vocabulary-third-place-thumb.webp"
   links:
     paper: "https://arxiv.org/abs/2408.10500"
+  gallery:
+    - src: "/assets/img/achievements/competitions/mer-open-vocabulary-2024/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/mer-open-vocabulary-2024/certificate-thumb.webp"
+      alt: "3rd Place certificate for Open-Vocabulary Multimodal Emotion Recognition Challenge"
+      caption: "3rd Place · 2024"
 
 - id: "semeval-2024"
   title: "SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
@@ -56,11 +68,14 @@
   role: "Co-first author and core contributor"
   summary: "Built a multimodal system for extracting emotion-cause pairs from conversations using multimodal language models."
   certificate: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place.pdf"
-  certificate_preview: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/semeval-2024-task-3-subtask-2-third-place-thumb.webp"
   links:
     paper: "https://aclanthology.org/2024.semeval-1.97/"
     code: "https://github.com/MIPS-COLT/MER-MCE"
+  gallery:
+    - src: "/assets/img/achievements/competitions/semeval-2024/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/semeval-2024/certificate-thumb.webp"
+      alt: "3rd Place certificate for SemEval 2024 Multimodal Emotion-Cause Analysis Challenge"
+      caption: "3rd Place · 2024"
 
 - id: "mer-2023"
   title: "ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
@@ -69,7 +84,19 @@
   role: "First author and core contributor"
   summary: "Introduced Expression MAE, a semi-supervised approach for learning robust multimodal emotion representations."
   certificate: "/assets/img/achievements/mer-2023-semi-second-place.pdf"
-  certificate_preview: "/assets/img/achievements/mer-2023-semi-second-place.webp"
-  certificate_thumbnail: "/assets/img/achievements/mer-2023-semi-second-place-thumb.webp"
   links:
     paper: "https://doi.org/10.1145/3581783.3612840"
+  gallery:
+    - src: "/assets/img/achievements/competitions/mer-2023/certificate.webp"
+      thumbnail: "/assets/img/achievements/competitions/mer-2023/certificate-thumb.webp"
+      alt: "2nd Place certificate for ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
+      caption: "2nd Place · 2023"
+
+- id: "computer-design-2020"
+  title: "13th China College Student Computer Design Competition"
+  rank: "1st Prize"
+  year: 2020
+  summary: "Awarded first prize in the 13th China College Student Computer Design Competition."
+  certificate: ""
+  gallery: []
+  links: {}
