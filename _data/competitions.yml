@@ -1,6 +1,6 @@
 ---
 - id: "egolink-2026"
-  title: "EgoLink Challenge, ACM Multimedia 2026"
+  title: "EgoLink Challenge, MM 2026"
   rank: "1st Place (Joint)"
   year: 2026
   role: "Lead contributor to SAGE"
@@ -12,11 +12,11 @@
   gallery:
     - src: "/assets/img/achievements/competitions/egolink-2026/certificate.webp"
       thumbnail: "/assets/img/achievements/competitions/egolink-2026/certificate-thumb.webp"
-      alt: "1st Place (Joint) certificate for EgoLink Challenge, ACM Multimedia 2026"
+      alt: "1st Place (Joint) certificate for EgoLink Challenge, MM 2026"
       caption: "1st Place (Joint) · 2026"
 
 - id: "affectiveart-2026"
-  title: "AffectiveArt Challenge, ACM Multimedia 2026"
+  title: "AffectiveArt Challenge, MM 2026"
   rank: "2nd Place"
   year: 2026
   role: "Team member"
@@ -27,7 +27,7 @@
   gallery:
     - src: "/assets/img/achievements/competitions/affectiveart-2026/certificate.webp"
       thumbnail: "/assets/img/achievements/competitions/affectiveart-2026/certificate-thumb.webp"
-      alt: "2nd Place certificate for AffectiveArt Challenge, ACM Multimedia 2026"
+      alt: "2nd Place certificate for AffectiveArt Challenge, MM 2026"
       caption: "2nd Place · 2026"
 
 - id: "mer-noise-2024"
@@ -78,7 +78,7 @@
       caption: "3rd Place · 2024"
 
 - id: "mer-2023"
-  title: "ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
+  title: "MM 2023 Multimodal Emotion Recognition Challenge"
   rank: "2nd Place"
   year: 2023
   role: "First author and core contributor"
@@ -89,7 +89,7 @@
   gallery:
     - src: "/assets/img/achievements/competitions/mer-2023/certificate.webp"
       thumbnail: "/assets/img/achievements/competitions/mer-2023/certificate-thumb.webp"
-      alt: "2nd Place certificate for ACM Multimedia 2023 Multimodal Emotion Recognition Challenge"
+      alt: "2nd Place certificate for MM 2023 Multimodal Emotion Recognition Challenge"
       caption: "2nd Place · 2023"
 
 - id: "computer-design-2020"
