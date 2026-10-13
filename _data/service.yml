@@ -1,4 +1,26 @@
 ---
+- role: "Selected Participant"
+  organization: "Pathfinder Program, Party School of the China Association for Science and Technology (Science and Technology Talent Academy)"
+  period: "2026.08"
+  link: ""
+  note: ""
+  id: "cast-leadership-program-2026"
+  kind: "event"
+  description: "Selected for CAST's national studies and leadership development program for young science and technology professionals."
+  gallery:
+    - src: "/assets/img/achievements/placeholders/event-overview.svg"
+      alt: "Photo placeholder for the 2026 Pathfinder Program: program overview"
+      caption: "Program overview · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-session.svg"
+      alt: "Photo placeholder for the 2026 Pathfinder Program: sessions and discussion"
+      caption: "Sessions and discussion · photo to be added."
+      placeholder: true
+    - src: "/assets/img/achievements/placeholders/event-group.svg"
+      alt: "Photo placeholder for the 2026 Pathfinder Program: group photo"
+      caption: "Group photo · photo to be added."
+      placeholder: true
+
 - role: "Lead Organizer"
   organization: "NeuroMM 2026 Workshop & Challenge, MM 2026"
   period: "2026"

@@ -1,13 +1,4 @@
 ---
-- id: "cast-leadership-program-2026"
-  title: "Pathfinder Program, Party School of the China Association for Science and Technology (Science and Technology Talent Academy)"
-  year: "2026.08"
-  category: "talent-program"
-  featured: true
-  description: "Selected for CAST's national studies and leadership development program for young science and technology professionals."
-  category_label: "Talent program"
-  gallery: []
-
 - id: "cast-phd-program"
   title: "CAST Young Science and Technology Talent Development Program — Ph.D. Student Special Program"
   year: "2025.10"
@@ -15,7 +6,6 @@
   featured: true
   description: "Selected for the doctoral-student track of the young science and technology talent development program."
   category_label: "Talent program"
-  gallery: []
 
 - id: "outstanding-masters-graduate"
   title: "Outstanding Master's Graduate, Shenzhen University"
@@ -25,7 +15,6 @@
   description: "University-level recognition awarded upon completion of the master's program."
   category_label: "Graduation honor"
   awarding_body: "Shenzhen University"
-  gallery: []
 
 - id: "outstanding-masters-thesis"
   title: "Outstanding Master's Thesis, Shenzhen University"
@@ -35,7 +24,6 @@
   description: "Recognition for the quality and research contribution of the master's thesis."
   category_label: "Graduation honor"
   awarding_body: "Shenzhen University"
-  gallery: []
 
 - id: "national-scholarship-2024"
   title: "National Scholarship"
@@ -44,7 +32,6 @@
   featured: true
   description: "National-level graduate scholarship recognizing academic and research excellence."
   category_label: "Scholarship"
-  gallery: []
 
 - id: "graduate-scholarship-2024"
   title: "First Prize, Graduate Academic Scholarship"
@@ -53,7 +40,6 @@
   featured: false
   description: "First-prize graduate academic scholarship, awarded in 2024."
   category_label: "Scholarship"
-  gallery: []
 
 - id: "graduate-scholarship-2023"
   title: "First Prize, Graduate Academic Scholarship"
@@ -62,7 +48,6 @@
   featured: false
   description: "First-prize graduate academic scholarship, awarded in 2023."
   category_label: "Scholarship"
-  gallery: []
 
 - id: "graduate-admission-scholarship"
   title: "Graduate Admission Scholarship"
@@ -71,7 +56,6 @@
   featured: false
   description: "Scholarship received upon entering graduate study in 2022."
   category_label: "Scholarship"
-  gallery: []
 
 - id: "national-encouragement-scholarship"
   title: "National Encouragement Scholarship"
@@ -80,4 +64,3 @@
   featured: false
   description: "National Encouragement Scholarship, awarded in 2019."
   category_label: "Scholarship"
-  gallery: []
