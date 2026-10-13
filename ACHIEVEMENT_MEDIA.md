@@ -3,7 +3,7 @@
 ## 页面分工
 
 - 首页 Honors & Awards 只显示 `_data/honors.yml` 中 `featured: true` 的非比赛荣誉，点击名称跳到详情。
-- Achievements 的 Competition Highlights 集中展示所有比赛；Honors & Awards 展示全部非比赛荣誉、说明和证书；Professional Activities 展示组织活动相册及审稿经历。
+- Achievements 的 Competition Highlights 集中展示所有比赛；Honors & Awards 仅以文字展示全部非比赛荣誉、日期及说明，不展示照片、证书或占位图；Professional Activities 展示组织、参与活动的相册及审稿经历。
 - CV 保留全部非比赛荣誉的文字列表。审稿经历不需要相册。
 
 ## 文件目录
@@ -15,10 +15,6 @@ assets/img/achievements/
 ├── competitions/<competition-id>/
 │   ├── certificate.webp          # 放大预览
 │   └── certificate-thumb.webp    # 页面缩略图
-├── honors/<honor-id>/
-│   ├── certificate.pdf           # 后续新增的原始奖状（可选）
-│   ├── certificate.webp
-│   └── certificate-thumb.webp
 ├── activities/<activity-id>/
 │   ├── event-01.jpg              # 第一张原图/大图
 │   ├── event-01-thumb.webp
@@ -31,22 +27,13 @@ assets/img/achievements/
 
 | 活动 | 照片目录（相对 `assets/img/achievements/`） |
 | --- | --- |
+| 2026 Pathfinder Program | `activities/cast-leadership-program-2026/` |
 | NeuroMM 2026 | `activities/neuromm-2026/` |
 | MER2026 | `activities/mer-2026/` |
 | VALSE 2026 Special Corner | `activities/valse-2026/` |
 | MER2025 | `activities/mer-2025/` |
 
-| 荣誉 | 奖状目录（相对 `assets/img/achievements/`） |
-| --- | --- |
-| 2026 Pathfinder Program | `honors/cast-leadership-program-2026/` |
-| 2025 CAST 博士生专项 | `honors/cast-phd-program/` |
-| 优秀硕士毕业生 | `honors/outstanding-masters-graduate/` |
-| 优秀硕士论文 | `honors/outstanding-masters-thesis/` |
-| 2024 国家奖学金 | `honors/national-scholarship-2024/` |
-| 2024 学业奖学金一等奖 | `honors/graduate-scholarship-2024/` |
-| 2023 学业奖学金一等奖 | `honors/graduate-scholarship-2023/` |
-| 2022 研究生入学奖学金 | `honors/graduate-admission-scholarship/` |
-| 2019 国家励志奖学金 | `honors/national-encouragement-scholarship/` |
+Pathfinder Program 已移至 Professional Activities，保留原有 ID `cast-leadership-program-2026`，历史链接仍可定位到该活动。后续照片放入上表对应目录，再更新 `_data/service.yml` 的 `gallery`。荣誉区不再需要准备图片；原有空的 `honors/` 目录已移除。
 
 ## 替换活动占位图
 
@@ -66,20 +53,20 @@ gallery:
 
 图注应描述真实画面。替换后删除 `placeholder: true`；它只用于 `placeholders/` 下的占位图。未提供 `thumbnail` 时会使用 `src`。不要把真实照片覆盖到共享占位文件上，否则多个活动会一起变更。
 
-## 添加奖学金、荣誉或比赛奖状
+## 添加比赛奖状
 
-编辑 `_data/honors.yml` 或 `_data/competitions.yml` 的对应条目，将空的 `gallery: []` 替换为：
+编辑 `_data/competitions.yml` 的对应条目，将空的 `gallery: []` 替换为：
 
 ```yaml
-certificate: "/assets/img/achievements/honors/national-scholarship-2024/certificate.pdf"
+certificate: "/assets/img/achievements/competitions/computer-design-2020/certificate.pdf"
 gallery:
-  - src: "/assets/img/achievements/honors/national-scholarship-2024/certificate.webp"
-    thumbnail: "/assets/img/achievements/honors/national-scholarship-2024/certificate-thumb.webp"
-    alt: "2024 National Scholarship certificate"
-    caption: "National Scholarship, 2024."
+  - src: "/assets/img/achievements/competitions/computer-design-2020/certificate.webp"
+    thumbnail: "/assets/img/achievements/competitions/computer-design-2020/certificate-thumb.webp"
+    alt: "2020 Computer Design Competition first-prize certificate"
+    caption: "Computer Design Competition, 2020."
 ```
 
-没有 PDF 时省略 `certificate`；点击预览仍可放大图片。没有真实证书图片时保留空列表，页面会显示明确的占位，不生成虚构奖状。荣誉可通过 `description`、`awarding_body`（有据可查时填写）和 `links` 补充细节。
+没有 PDF 时省略 `certificate`；点击预览仍可放大图片。没有真实证书图片时保留空列表，页面会显示明确的占位，不生成虚构奖状。荣誉信息只需在 `_data/honors.yml` 中更新名称、日期和 `description` 等文字字段。
 
 ## 图片规格与检查
 

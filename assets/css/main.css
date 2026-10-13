@@ -696,8 +696,53 @@ footer p {
 }
 
 .achievement-section h2,
-.achievement-row {
+.achievement-row,
+.honor-row {
   scroll-margin-top: 24px;
+}
+
+.honor-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.honor-row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.honor-row:first-child {
+  padding-top: 8px;
+}
+
+.honor-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.honor-row > time {
+  padding-top: 2px;
+  color: var(--blue-dark);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.honor-details h3 {
+  margin: 0 0 6px;
+  color: #26333e;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.honor-details > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .activity-group-title {
@@ -1120,6 +1165,16 @@ html.gallery-viewer-open {
   .achievement-meta {
     flex-wrap: wrap;
     gap: 4px 10px;
+  }
+
+  .honor-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 18px 0;
+  }
+
+  .honor-details h3 {
+    font-size: 16px;
   }
 
   .gallery-hint {

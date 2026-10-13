@@ -32,26 +32,24 @@ permalink: /achievements/
 <section class="detail-section achievement-section" aria-labelledby="honors-detail-title">
   <h2 id="honors-detail-title">Honors &amp; Awards</h2>
   <p class="section-lead">Academic honors, scholarships, and talent development programs.</p>
-  <div class="achievement-list">
+  <ul class="honor-list">
     {% for honor in site.data.honors %}
-      <article class="achievement-row honor-row" id="{{ honor.id }}" aria-labelledby="{{ honor.id }}-title">
-        {% include achievement-gallery.html images=honor.gallery title=honor.title document=honor.certificate %}
-        <div class="achievement-details">
-          <div class="achievement-meta"><span>{{ honor.category_label }}</span><time>{{ honor.year }}</time></div>
+      <li class="honor-row" id="{{ honor.id }}" aria-labelledby="{{ honor.id }}-title">
+        <time>{{ honor.year }}</time>
+        <div class="honor-details">
           <h3 id="{{ honor.id }}-title">{{ honor.title }}</h3>
           <p>{{ honor.description }}</p>
-          {% if honor.awarding_body %}<p class="achievement-role"><strong>Awarding institution:</strong> {{ honor.awarding_body }}</p>{% endif %}
-          {% include achievement-links.html links=honor.links document=honor.certificate %}
+          {% if honor.links %}{% include achievement-links.html links=honor.links %}{% endif %}
         </div>
-      </article>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>
 
 <section class="detail-section achievement-section" aria-labelledby="service-detail-title">
   <h2 id="service-detail-title">Professional Activities</h2>
-  <p class="section-lead">Workshop and challenge organization, community events, and peer review.</p>
-  <h3 class="activity-group-title">Organizing &amp; Community</h3>
+  <p class="section-lead">Workshop and challenge organization, professional development, and peer review.</p>
+  <h3 class="activity-group-title">Events &amp; Programs</h3>
   <div class="achievement-list activity-list">
     {% for event in activities %}
       <article class="achievement-row activity-row" id="{{ event.id }}" aria-labelledby="{{ event.id }}-title">

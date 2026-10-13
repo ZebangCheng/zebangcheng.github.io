@@ -49,9 +49,11 @@ Optional `metrics` provide a source link, API endpoint and count field, plus a v
 
 ## Achievements and image galleries
 
-Competition results belong only in `_data/competitions.yml`. Non-competition honors go in `_data/honors.yml`; `featured: true` selects the concise homepage list, while Achievements and the CV include every honor. Event records in `_data/service.yml` use `kind: event` and support photo galleries; reviewer records use `kind: review`.
+Competition results belong only in `_data/competitions.yml`. Non-competition honors go in `_data/honors.yml`; `featured: true` selects the concise homepage list, while Achievements and the CV include every honor as text. Honors do not display images or certificate placeholders. Event records in `_data/service.yml` use `kind: event` and support photo galleries; reviewer records use `kind: review`.
 
-Store media by category and stable entry ID under `assets/img/achievements/`. Set `gallery: []` until a certificate is available. Each gallery item needs an image, alternative text, and a caption; a smaller thumbnail is optional:
+Pathfinder Program belongs in `_data/service.yml` as a participation activity; its future photos go in `assets/img/achievements/activities/cast-leadership-program-2026/`.
+
+Store competition and activity media by category and stable entry ID under `assets/img/achievements/`. Set `gallery: []` until a certificate is available. Each gallery item needs an image, alternative text, and a caption; a smaller thumbnail is optional:
 
 ```yaml
 - id: "challenge-2026"
@@ -72,9 +74,9 @@ Store media by category and stable entry ID under `assets/img/achievements/`. Se
 
 Check certificate files for personal identifiers, signatures, and QR codes before publishing them.
 
-Rows share a 4:3 thumbnail frame on the left, with full images in a click-to-enlarge gallery. Multiple images support buttons, arrow keys, and touch swipes. Existing PDF download URLs remain unchanged. Shared placeholder images are explicitly labeled and require `placeholder: true`; remove that flag when replacing them with real photos.
+Competition and activity rows share a 4:3 thumbnail frame on the left, with full images in a click-to-enlarge gallery. Multiple images support buttons, arrow keys, and touch swipes. Existing PDF download URLs remain unchanged. Shared placeholder images are explicitly labeled and require `placeholder: true`; remove that flag when replacing them with real photos.
 
-See [the achievement media guide](ACHIEVEMENT_MEDIA.md) for prepared folders, photo naming, image sizes, and examples for activities and scholarships.
+See [the achievement media guide](ACHIEVEMENT_MEDIA.md) for prepared folders, photo naming, image sizes, and examples for activities and competition certificates.
 
 ## Validation and publishing
 
